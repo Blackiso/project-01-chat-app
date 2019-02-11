@@ -13,7 +13,7 @@
 		private const DB_PASS =  "";
 		private const DB_USER =  "root";
 
-		//Database connection container
+		// Database connection container
 		private $conn;
 
 		function __construct() {
@@ -37,13 +37,13 @@
  			$db_check_ex = $db_check_qr->fetchAll();
  			// If array empty then create database
  			if (empty($db_check_ex)) {
- 				//Setup querys
- 				//create database
+ 				// Setup querys
+ 				// create database
  				try {
 	 				$db_create_qr = $this->conn->prepare("CREATE DATABASE ".self::DB_NAME);
 	 				if($db_create_qr->execute()) {
 	 					$this->connect(1);
-	 					//create tables
+	 					// create tables
 	 					$msg_table_qr = $this->conn->prepare("CREATE TABLE `messeges` (
 						  `msg_ID` int(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
@@ -82,14 +82,14 @@
 						  `moderator` tinyint(1) NOT NULL DEFAULT '0'
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
-						//Execute querys
+						// Execute querys
 						$msg_table_qr->execute();
 						$rooms_table_qr->execute();
 						$rooms_options_table_qr->execute();
 						$users_table_qr->execute();
 						$users_options_qr->execute();
 
-						//Setup primary keys
+						// Setup primary keys
 						$pk_change_msg = $this->conn->prepare("ALTER TABLE `messeges`
 						  ADD PRIMARY KEY (`msg_ID`)");
 						$pk_change_rooms = $this->conn->prepare("ALTER TABLE `rooms`
@@ -101,7 +101,7 @@
 						$pk_change_users_options = $this->conn->prepare("ALTER TABLE `users_options`
 						  ADD PRIMARY KEY (`user_ID`)");
 
-						//Execute querys
+						// Execute querys
 						$pk_change_msg->execute();
 						$pk_change_rooms->execute();
 						$pk_change_rooms_options->execute();
@@ -111,30 +111,69 @@
 	 			} catch (PDOException $e) {
 				    $this->db_error($e->getMessage());
 				}
+ 			}else {
+ 				$this->connect(1);
  			}
 		}
-
+		/**
+		* Function to connect to database
+		* @param use_db : boolen
+		*/
 		private function connect($use_db) {
 			try {
-				//init PDO object
+				// init PDO object
 				$pdo_init = 'mysql:host='.self::DB_HOST;
 				if ($use_db) $pdo_init .= ';dbname='.self::DB_NAME;
 			
 				$this->conn = new PDO($pdo_init, self::DB_USER, self::DB_PASS);
 				if (DEVEMODE) {
-					//Setup errors mod
+					// Setup errors mod
 					$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				}
 			} catch (PDOException $e) {
 			    $this->db_error($e->getMessage());
 			}
 		}
+		/**
+		* Function to check in a row is available in table
+		* @param table   : String
+		* @param options : array( condition => value )
+		* @param return  : Boolean
+		* @param culumn  : String | null
+		* @return Boolean | array
+		*/
+		public function check_row($table, $conditions, $return = false, $culumn = null) {
+			// Building the query
+			$row_check_qr = "SELECT ";
+			$row_check_qr .= $culumn != null ? $culumn : "*";
+			$row_check_qr .= " FROM $table";
+			$row_check_qr .= " WHERE";
+
+			$first = true;
+			foreach ($conditions as $condition => $value) {
+				$row_check_qr .= !$first ? " AND" : "";
+				$row_check_qr .= " " . $condition . " = '".$value."'";
+				$first = false;
+			}
+			// Execute the query
+			$row_check_qr = $this->conn->prepare($row_check_qr);
+			$row_check_qr->execute();
+			$result = $row_check_qr->fetchAll();
+			// Return the results
+			if (!empty($result)) {
+				return $return ? $result : true;
+			}else {
+				return false;
+			}
+		}
 
 		private function db_error($msg) {
-			//Return error message as json and kill the script
+			// Return error message as json and kill the script
 			echo json_encode(array('DB Error' => $msg));
 			die();
 		}
 	}
 
 	$dd = new DB();
+
+	echo $dd->check_row('users', array('user_ID' => 'slfjdlqsdlsqd', 'username' => 'blackiso'));
