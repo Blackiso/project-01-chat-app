@@ -4,7 +4,7 @@
 	/**
 	 * Database Creation and Managment Class
 	 * @param NONE
-     * @return Database object
+	 * @return Database object
 	 */
 	class DB {
 		// Define database details
