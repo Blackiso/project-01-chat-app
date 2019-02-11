@@ -136,13 +136,12 @@
 		}
 		/**
 		* Function to check in a row is available in table
-		* @param table   : String
-		* @param options : array( condition => value )
-		* @param return  : Boolean
-		* @param culumn  : String | null
-		* @return Boolean | array
+		* @param  table   : String
+		* @param  options : array( condition => value )
+		* @param  return  : Boolean
+		* @return Boolean
 		*/
-		public function check_row($table, $conditions, $return = false, $culumn = null) {
+		public function check_row($table, $conditions) {
 			// Building the query
 			$row_check_qr = "SELECT ";
 			$row_check_qr .= $culumn != null ? $culumn : "*";
@@ -161,10 +160,26 @@
 			$result = $row_check_qr->fetchAll();
 			// Return the results
 			if (!empty($result)) {
-				return $return ? $result : true;
+				return true;
 			}else {
 				return false;
 			}
+		}
+		/**
+		* Function to execut querys on database
+		* @param  statment : String
+		* @param  Return   : Boolean
+		* @return Array | null
+		*/
+		public function query($statment, $return = true) {
+			$query = $this->conn->prepare($statment);
+			$query->execute();
+			if ($return) {
+				$result = $query->fetchAll();
+			}else {
+				return;
+			}
+			
 		}
 
 		private function db_error($msg) {
@@ -175,5 +190,4 @@
 	}
 
 	$dd = new DB();
-
 	echo $dd->check_row('users', array('user_ID' => 'slfjdlqsdlsqd', 'username' => 'blackiso'));
