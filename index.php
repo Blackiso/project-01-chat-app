@@ -38,7 +38,7 @@
 
 	// Init App
 	$class_name = $parsed_uri->class;
-	if (array_search($class_name, $routes)) {
+	if (array_search($class_name, ROUTES)) {
 		$app = new $class_name($request_method);
 	}else {
 		header("HTTP/1.1 401 Unauthorized");

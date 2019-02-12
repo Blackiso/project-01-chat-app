@@ -1,5 +1,17 @@
 <?php
-	
+	// Define routes
+	const ROUTES = [
+		"messeges",
+		"users",
+		"rooms"
+	];
+	// Define allowed methods
+	const METHODS = [
+		"POST",
+		"GET",
+		"PUT",
+		"DELETE"
+	];
 	// Core functions
 	/**
 	* Deve Mode enable function
@@ -49,7 +61,7 @@
 					$return_obj->params = $arr_param['params'];
 					$current_part = $arr_param['string'];
 				}
-				
+
 				if (if_collection_id($current_part)) {
 					$return_obj->id = $current_part;
 				}else {
@@ -97,5 +109,47 @@
 			return true;
 		}else {
 			return false;
+		}
+	}
+
+	/**
+	 * Template for the modules, and conatins global methods
+	 */
+	abstract class Module {
+		// Database conatiner
+		protected $db;
+		protected $method;
+
+		function __construct($method) {
+			// Init Database connection
+			$this->db = new DB();
+			$this->method = $method;
+			$this->init();
+		}
+
+		// Call method based on type of request
+		private function init() {
+			if (in_array($this->method, METHODS)) {
+				$mth = strtolower($this->method);
+				if (method_exists($this, $mth)) {
+					$this->$mth();
+				}else {
+					$this->write_error('HTTP Method Not Allowed!');
+				}
+			}else {
+				$this->write_error('HTTP Method Not Allowed!');
+			}
+		}
+
+    	// Method to extract request body
+		protected function get_request_body() {
+			$entity_body = file_get_contents('php://input');
+			return json_decode($entity_body);
+		}
+
+		// Error handller
+		protected function write_error($msg) {
+			echo json_encode(array("error" => $msg));
+			die();
 		}
 	}
