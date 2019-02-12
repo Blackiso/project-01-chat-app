@@ -26,9 +26,21 @@
 	$request_method = $_SERVER['REQUEST_METHOD'];
 
 	// Init Session
-	if (isset($_COOKIES['SESSION_ID'])) {
-		session_id($_COOKIES['SESSION_ID']);
+	if (isset($_COOKIE['SESSION_ID'])) {
+		$sid = $_COOKIE['SESSION_ID'];
+	}else {
+		$sid = "SID".uniqid();
 	}
-	session_start();
+
+	define("SID", $sid);
+	session_id(SID);
+	session_start(array("name" => "SESSION_ID"));
+
+	// Init App
 	$class_name = $parsed_uri->class;
-	$app = new $class_name();
+	if (array_search($class_name, $routes)) {
+		$app = new $class_name($request_method);
+	}else {
+		header("HTTP/1.1 401 Unauthorized");
+	}
+	

@@ -117,7 +117,7 @@ users table will be updated to keep the user online, the server will check all t
 			```
 ## Database Structure
 
-<img src="https://i.imgur.com/eEjyyGF.png" />
+<img src="https://i.imgur.com/tSBFpl0.png" />
 
 ## Files Structure
 > This is the files and folders structure for the API
