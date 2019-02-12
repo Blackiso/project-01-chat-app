@@ -1,6 +1,5 @@
 <?php
 
-	define("DEVEMODE", 1);
 	/**
 	 * Database Creation and Managment Class
 	 * @param NONE
@@ -183,6 +182,3 @@
 			die();
 		}
 	}
-
-	$dd = new DB();
-	echo $dd->query("SELECT * FROM users");

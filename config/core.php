@@ -43,19 +43,22 @@
 		// Get collection id if available
 		if (sizeof($uri_parts) > 1) {
 			for ($i=1; $i < sizeof($uri_parts); $i++) {
-				// Check if collection id
-				if (strip_params($uri_parts[$i])) {
-					
+				$current_part = $uri_parts[$i];
+				// Check uri parts
+				if ($arr_param = strip_params($current_part)) {
+					$return_obj->params = $arr_param['params'];
+					$current_part = $arr_param['string'];
+				}
+				
+				if (if_collection_id($current_part)) {
+					$return_obj->id = $current_part;
 				}else {
-
+					$return_obj->sub_collection = $current_part;
 				}
 			}
 		}
-
-		// print_r($uri_parts);
-		strip_params($uri_parts[1]);
 	
-		// return $return_obj;
+		return $return_obj;
 	}
 
 	/**
@@ -66,7 +69,19 @@
 	function strip_params($string) {
 		$params = clear_empty_array(explode('?', $string));
 		if (sizeof($params) > 1) {
-			
+			$return_array = array();
+			$return_array['string'] = $params[0];
+			$return_array['params'] = array();
+
+			$params_array = explode('&', $params[1]);
+			foreach ($params_array as $value) {
+				$param = array();
+				$param['key'] = explode("=", $value)[0];
+				$param['value'] = explode("=", $value)[1];
+				array_push($return_array['params'], $param);
+			}
+
+			return $return_array;
 		}else {
 			return false;
 		}
@@ -78,7 +93,7 @@
 	* @return Boolean
 	*/
 	function if_collection_id($string) {
-		if (!preg_match('/^(ID)/', $string)) {
+		if (preg_match('/^(ID)/', $string)) {
 			return true;
 		}else {
 			return false;
