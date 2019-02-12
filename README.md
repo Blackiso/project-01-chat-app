@@ -102,11 +102,11 @@ users table will be updated to keep the user online, the server will check all t
 			```
 		
 1. **Messages :**
-	- `[GET]` /api/messeges/{room_id}/messeges
+	- `[GET]` /api/messeges/{room_id}
 		- Used to get all messeges in the chat room
 		- You can use the filter parameter to get just the new messeges `?filter={last_messege_time}`
 		
-	- `[POST]` /api/messeges/{room_id}/messeges
+	- `[POST]` /api/messeges/{room_id}
 		- Used to send messeges
 		- Request body  <br/>
 			``` json
