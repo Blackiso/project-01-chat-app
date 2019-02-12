@@ -26,15 +26,18 @@
 	$request_method = $_SERVER['REQUEST_METHOD'];
 
 	// Init Session
-	if (isset($_COOKIE['SESSION_ID'])) {
+	$sid = "SID".uniqid();
+
+	if (isset($_COOKIE['SESSION_ID']) AND isset($_SESSION['active'])) {
 		$sid = $_COOKIE['SESSION_ID'];
-	}else {
-		$sid = "SID".uniqid();
 	}
 
 	define("SID", $sid);
 	session_id(SID);
 	session_start(array("name" => "SESSION_ID"));
+	if (!isset($_SESSION['active'])) {
+		$_SESSION['active'] = true;
+	}
 
 	// Init App
 	$class_name = $parsed_uri->class;

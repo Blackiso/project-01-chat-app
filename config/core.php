@@ -76,7 +76,7 @@
 	/**
 	* Takes a string strip params from it and returns string and params
 	* @param  string : String
-	* @return Array
+	* @return Array | Boolean
 	*/
 	function strip_params($string) {
 		$params = clear_empty_array(explode('?', $string));
