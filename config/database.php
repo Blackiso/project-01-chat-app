@@ -143,8 +143,7 @@
 		*/
 		public function check_row($table, $conditions) {
 			// Building the query
-			$row_check_qr = "SELECT ";
-			$row_check_qr .= $culumn != null ? $culumn : "*";
+			$row_check_qr = "SELECT *";
 			$row_check_qr .= " FROM $table";
 			$row_check_qr .= " WHERE";
 
@@ -174,12 +173,8 @@
 		public function query($statment, $return = true) {
 			$query = $this->conn->prepare($statment);
 			$query->execute();
-			if ($return) {
-				$result = $query->fetchAll();
-			}else {
-				return;
-			}
-			
+			$result = $query->fetchAll();
+			return $result;
 		}
 
 		private function db_error($msg) {
@@ -190,4 +185,4 @@
 	}
 
 	$dd = new DB();
-	echo $dd->check_row('users', array('user_ID' => 'slfjdlqsdlsqd', 'username' => 'blackiso'));
+	echo $dd->query("SELECT * FROM users");
