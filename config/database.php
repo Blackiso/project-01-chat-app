@@ -13,7 +13,7 @@
 		private const DB_USER =  "root";
 
 		// Database connection container
-		private $conn;
+		public $conn;
 
 		function __construct() {
 			// If the DEVEMODE is true create run init database
@@ -71,7 +71,8 @@
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
-						  `last_seen` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+						  `last_seen` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+						  `session_ID` varchar(255) NOT NULL
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$users_options_qr = $this->conn->prepare("CREATE TABLE `users_options` (
