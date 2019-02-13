@@ -46,12 +46,8 @@
 			$request_data = $this->get_request_body();
 			$this->username = isset($request_data->username) ? htmlentities($request_data->username) : null;
 			$this->room_ID = $request_data->room_ID;
-
-			// check if room exist
-			if (!$this->db->check_row("rooms", array("room_ID" => $this->room_ID))) {
-				$this->write_error("Room dosen't exist!");
-			}
-
+			// Check if room exist
+			$this->room_exist(true);
     		// Add user to room
     		if (!$this->db->check_row("users", array("user_ID" => $this->user_ID, "room_ID" => $this->room_ID))) {
     			$user_query = $this->db->query("INSERT INTO users (user_ID, room_ID, username, session_ID)

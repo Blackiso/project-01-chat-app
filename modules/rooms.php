@@ -57,11 +57,35 @@
             }
         }
         /**
-        * This method is for handling PUT requests for users class
+        * This method is for handling PUT requests for rooms class
         * @return Array 
         */
         protected function put() {
-        	
+        	// Update room options
+            
+        }
+         /**
+        * This method is for handling GET requests for rooms class
+        * @return Array 
+        */
+        protected function get() {
+            $subc = $this->sub_collection;
+            if ($subc !== null && method_exists($this, $subc)) {
+                return $this->$subc();
+            }else {
+                $this->write_error("Request error!");
+            }
+        }
+         /**
+        * This method is for getting online users in the room
+        * @return Array 
+        */        
+        protected function users() {
+            if ($this->room_exist()) {
+                $users = $this->db->query("SELECT user_ID, room_ID, username, last_seen 
+                    FROM users WHERE room_ID = '$this->room_ID'");
+                return $users;
+            }
         }
         /**
         * This method is for changing user option in database

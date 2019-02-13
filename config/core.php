@@ -150,6 +150,23 @@
 			}
 		}
 
+		/**
+        * Check if the current room exist
+        * @param kill : Boolean
+        * @return Boolean
+        */ 
+        protected function room_exist($kill = false) {
+            // check if room exist
+            if (!$this->db->check_row("rooms", array("room_ID" => $this->room_ID))) {
+                if ($kill) {
+                    $this->write_error("Room dosen't exist!");
+                }else {
+                    return false;
+                }
+            }
+            return true;
+        }
+
     	// Method to extract request body
 		protected function get_request_body() {
 			$entity_body = file_get_contents('php://input');

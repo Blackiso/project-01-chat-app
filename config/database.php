@@ -177,7 +177,7 @@
 			$query = $this->conn->prepare($statment);
 			$rs =  $query->execute();
 			if ($return) {
-				$result = $query->fetchAll();
+				$result = $query->fetchAll(PDO::FETCH_ASSOC);
 			}else {
 				$result = $rs;
 			}
