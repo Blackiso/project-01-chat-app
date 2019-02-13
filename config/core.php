@@ -63,7 +63,7 @@
 				}
 
 				if (if_collection_id($current_part)) {
-					$return_obj->id = $current_part;
+					$return_obj->collection_id = $current_part;
 				}else {
 					$return_obj->sub_collection = $current_part;
 				}
@@ -124,15 +124,14 @@
 			// Init Database connection
 			$this->db = new DB();
 			$this->method = $method;
-			$this->init();
 		}
 
 		// Call method based on type of request
-		private function init() {
+		public function init() {
 			if (in_array($this->method, METHODS)) {
 				$mth = strtolower($this->method);
 				if (method_exists($this, $mth)) {
-					$this->$mth();
+					return $this->$mth();
 				}else {
 					$this->write_error('HTTP Method Not Allowed!');
 				}

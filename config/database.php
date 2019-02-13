@@ -79,7 +79,8 @@
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `banned` tinyint(1) NOT NULL DEFAULT '0',
-						  `moderator` tinyint(1) NOT NULL DEFAULT '0'
+						  `moderator` tinyint(1) NOT NULL DEFAULT '0',
+						  `admin` tinyint(1) NOT NULL DEFAULT '0'
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						// Execute querys
@@ -172,8 +173,12 @@
 		*/
 		public function query($statment, $return = true) {
 			$query = $this->conn->prepare($statment);
-			$query->execute();
-			$result = $query->fetchAll();
+			$rs =  $query->execute();
+			if ($return) {
+				$result = $query->fetchAll();
+			}else {
+				$result = $rs;
+			}
 			return $result;
 		}
 
