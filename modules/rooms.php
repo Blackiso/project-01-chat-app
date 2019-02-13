@@ -7,7 +7,7 @@
 	 * @param Params : Array | Null
 	 * @return Object
 	 */
-	class rooms extends Module {
+    class rooms extends Module {
         // Setting parameters
         protected $room_ID;
         protected $session_ID = SESSID;
@@ -72,7 +72,7 @@
         private function set_option($option, $value) {
 
         }
-	}
+    }
 
 
     /*
