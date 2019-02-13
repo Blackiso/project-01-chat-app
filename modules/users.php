@@ -22,11 +22,6 @@
 			$this->sub_collection = $sub_collection;
 			$this->params = $params;
 
-			// Get data form request body
-			$request_data = $this->get_request_body();
-			$this->username = isset($request_data->username) ? htmlentities($request_data->username) : null;
-			$this->room_ID = $request_data->room_ID;
-
 			// Run parent constructor
 			parent::__construct($method);
 		}
@@ -35,6 +30,10 @@
     	* @return Array 
     	*/
     	protected function post() {
+    		// Get data form request body
+			$request_data = $this->get_request_body();
+			$this->username = isset($request_data->username) ? htmlentities($request_data->username) : null;
+			$this->room_ID = $request_data->room_ID;
     		// Add user to room
     		// Generate a new ID for user
     		if ($this->user_ID == null) $this->user_ID = "ID".uniqid();
@@ -69,3 +68,21 @@
 
     	}
 	}
+
+	/*
+    Join room request body
+	----------------------
+    {
+        "username" : "blackiso",
+        "room_ID" : "ID5c64294b6cbfd"
+    }
+	
+	Join room request returns
+	-------------------------
+    {
+	    "user_ID": "ID5c6429fa1ee39",
+	    "room_ID": "ID5c64294b6cbfd",
+	    "username": "blackiso",
+	    "session_ID": "SID5c6429fa1b661"
+	}
+    */
