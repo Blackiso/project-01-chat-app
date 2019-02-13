@@ -53,10 +53,10 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$rooms_table_qr = $this->conn->prepare("CREATE TABLE `rooms` (
-						  `room_ID` int(255) NOT NULL,
+						  `room_ID` varchar(255) NOT NULL,
+						  `session_ID` varchar(255) NOT NULL,
 						  `room_name` varchar(255) NOT NULL,
-						  `admin_ID` varchar(255) NOT NULL,
-						  `option_ID` int(255) NOT NULL,
+						  `access` varchar(255) NOT NULL,
 						  `tags` varchar(255) NOT NULL,
 						  `creation_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
