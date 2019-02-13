@@ -7,16 +7,31 @@
 	header("Access-Control-Allow-Headers: Content-Type, *");
 
 	// Init Session
-	$sid = "SID".uniqid();
+	$sid;
 
-	if (isset($_COOKIE['SESSION_ID']) AND isset($_SESSION['active'])) {
-		$sid = $_COOKIE['SESSION_ID'];
+	if (isset($_COOKIE['SESSION_ID'])) {
+		start_session($_COOKIE['SESSION_ID']);
+
+		if (!isset($_SESSION['active'])) {
+			new_session();
+		}else {
+			$sid = $_COOKIE['SESSION_ID'];
+		}
+	}else {
+		new_session();
 	}
 
-	session_id($sid);
-	session_start(array("name" => "SESSION_ID"));
-	if (!isset($_SESSION['active'])) {
+	function new_session() {
+		global $sid;
+		$sid = "SID".uniqid();
+		start_session($sid);
 		$_SESSION['active'] = true;
+	}
+
+	function start_session($id) {
+		if (session_status() === PHP_SESSION_ACTIVE) { session_destroy(); }
+		session_id($id);
+		session_start(array("name" => "SESSION_ID"));
 	}
 
 	// Define constents

@@ -68,6 +68,7 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$users_table_qr = $this->conn->prepare("CREATE TABLE `users` (
+						  `id` int(255) NOT NULL,
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
@@ -76,6 +77,7 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$users_options_qr = $this->conn->prepare("CREATE TABLE `users_options` (
+						  `id` int(255) NOT NULL,
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `banned` tinyint(1) NOT NULL DEFAULT '0',
@@ -98,9 +100,9 @@
 						$pk_change_rooms_options = $this->conn->prepare("ALTER TABLE `rooms_options`
 						  ADD PRIMARY KEY (`option_ID`)");
 						$pk_change_users = $this->conn->prepare("ALTER TABLE `users`
-						  ADD PRIMARY KEY (`user_ID`)");
+						  ADD PRIMARY KEY (`id`)");
 						$pk_change_users_options = $this->conn->prepare("ALTER TABLE `users_options`
-						  ADD PRIMARY KEY (`user_ID`)");
+						  ADD PRIMARY KEY (`id`)");
 
 						// Execute querys
 						$pk_change_msg->execute();

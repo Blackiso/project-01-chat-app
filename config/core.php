@@ -17,10 +17,10 @@
 	* Deve Mode enable function
 	* @param status : Boolean
 	*/
-	function deve_mode($status) {
-		define("DEVEMODE", $status);
+	function deve_mode($state) {
+		define("DEVEMODE", $state);
 
-		if ($status) {
+		if ($state) {
 			ini_set('display_errors', true);
 			error_reporting(E_ALL);
 		}
@@ -137,6 +137,16 @@
 				}
 			}else {
 				$this->write_error('HTTP Method Not Allowed!');
+			}
+		}
+
+		// Check if current users is the admin
+		protected function is_admin($room_ID) {
+			$admin = $this->db->check_row("rooms", array("room_ID" => $room_ID, "session_ID" => SESSID));
+			if ($admin) {
+				return true;
+			}else {
+				return false;
 			}
 		}
 

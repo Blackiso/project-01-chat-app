@@ -46,6 +46,7 @@
                     $result = array();
                     $result['room_ID']    = $this->room_ID;
                     $result['room_name']    = $this->room_name;
+                    $result['session_ID']    = $this->session_ID;
 
                     return $result;
                 }else {
