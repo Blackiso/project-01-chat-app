@@ -57,11 +57,10 @@ users table will be updated to keep the user online, the server will check all t
 			``` json
 			{ 
 			    "name"   : room_name,
-				"options"   : {
-						"accsess" : "private",
-						"tags"    : "tag1  tag2" || null
-					}
-			    ]
+			    "options": {
+			       "accsess" : "private",
+			       "tags"    : "tag1  tag2" || null
+			    }
 			}
 			```
 	- `[DELETE]` /api/rooms/{room_id}
