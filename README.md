@@ -37,18 +37,8 @@ users table will be updated to keep the user online, the server will check all t
 			    "room_ID": room_id,
 			}
 			```
-	- `[PUT]` /api/users/{user_id}
+	- `[PUT]` /api/users/{user_id} (Not Availble)
 		- Used to update user
-		- Request body  <br/>
-			``` json
-			{ 
-			    "update": type_of_update,
-			    option  : value
-			}
-			```
-		- Update options / types
-			- `status` (option name banned) for changing the satus of the user
-			- `type` For changing the type of the user
 
 1. **Rooms :**
 	- `[POST]` /api/rooms
@@ -66,41 +56,19 @@ users table will be updated to keep the user online, the server will check all t
 	- `[DELETE]` /api/rooms/{room_id}
 		- Used to delete a room
 		
-	- `[PUT]` /api/rooms/{room_id}
+	- `[PUT]` /api/rooms/{room_id} (Not Availble)
 		- Used to update the room
-		- Request body  <br/>
-			``` json
-			{ 
-			    "update": type_of_update,
-			    option  : value
-			}
-			```
-		- Update options / types
-			- `name` for changing the name of the room
-			- `option` For changing the options of the room it takes an array of objects 
-			``` json
-			[
-			   {
-			      option : value
-			   }
-			]
-			```
+
 	- `[GET]` /api/rooms/{room_id}/users
 		- Used to get online users
 		
-	- `[GET]` /api/rooms/featured
+	- `[GET]` /api/rooms/featured (Not Availble)
 		- Used to get featured rooms (its based on the number of online users)
 
-	- `[GET]` /api/rooms/search
+	- `[GET]` /api/rooms/search (Not Availble)
 		- Used to search rooms by tags
-		- Request body  <br/>
-			``` json
-			{ 
-			    "tags"  : [tags]
-			}
-			```
 		
-1. **Messages :**
+1. **Messages :** (Not Availble)
 	- `[GET]` /api/messeges/{room_id}
 		- Used to get all messeges in the chat room
 		- You can use the filter parameter to get just the new messeges `?filter={last_messege_time}`
