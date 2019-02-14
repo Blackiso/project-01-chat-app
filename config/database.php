@@ -62,7 +62,8 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$rooms_options_table_qr = $this->conn->prepare("CREATE TABLE `rooms_options` (
-						  `option_ID` int(255) NOT NULL,
+						  `id` int(255) NOT NULL,
+						  `room_ID` varchar(255) NOT NULL,
 						  `option_name` varchar(255) NOT NULL,
 						  `option_value` varchar(255) NOT NULL
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
@@ -98,7 +99,7 @@
 						$pk_change_rooms = $this->conn->prepare("ALTER TABLE `rooms`
 	  					  ADD PRIMARY KEY (`room_ID`)");
 						$pk_change_rooms_options = $this->conn->prepare("ALTER TABLE `rooms_options`
-						  ADD PRIMARY KEY (`option_ID`)");
+						  ADD PRIMARY KEY (`id`)");
 						$pk_change_users = $this->conn->prepare("ALTER TABLE `users`
 						  ADD PRIMARY KEY (`id`)");
 						$pk_change_users_options = $this->conn->prepare("ALTER TABLE `users_options`
