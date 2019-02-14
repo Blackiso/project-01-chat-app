@@ -18,7 +18,6 @@
 		// Class constructor
 		function __construct($method, $user_ID = null, $sub_collection = null, $params = null) {
 			// Setup all parameters
-			
 			if ($user_ID == null) {
 				if (!isset($_SESSION['user_ID'])) {
 					$id = "ID".uniqid();

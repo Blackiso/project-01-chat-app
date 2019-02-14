@@ -64,6 +64,35 @@
         	// Update room options
             
         }
+        /**
+        * This method is for handling DELETE requests for rooms class
+        * @return Array 
+        */
+        protected function delete($server = false) {
+            // Check if room exist
+            if ($this->room_exist(true)) {
+                // Check if admin 
+                if (!$server) {
+                    if (!$this->is_admin($this->room_ID)) {
+                        $this->write_error("Error only the admin can delete this room!");
+                    }
+                }
+                // Delete all users from room
+                $clear_users = $this->db->query("DELETE FROM users WHERE room_ID = '$this->room_ID'", false);
+                // Delete all users options
+                $clear_users_op = $this->db->query("DELETE FROM users_options WHERE room_ID = '$this->room_ID'", false);
+                // Delete all room options
+                $clear_options = $this->db->query("DELETE FROM rooms_options WHERE room_ID = '$this->room_ID'", false);
+                // Delete room   
+                $delete_room = $this->db->query("DELETE FROM rooms WHERE room_ID = '$this->room_ID'", false);
+
+                if ($clear_users && $clear_users_op && $clear_options && $delete_room) {
+                    return array("success" => true);
+                }else {
+                    $this->write_error("Error deleting room!");
+                }
+            }
+        }
          /**
         * This method is for handling GET requests for rooms class
         * @return Array 
