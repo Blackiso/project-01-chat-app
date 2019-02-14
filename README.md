@@ -37,7 +37,7 @@ users table will be updated to keep the user online, the server will check all t
 			    "room_ID": room_id,
 			}
 			```
-	- `[PUT]` /api/users/{user_id} (Not Availble)
+	- `[PUT]` /api/users/{user_id} **(Not Availble)**
 		- Used to update user
 
 1. **Rooms :**
@@ -56,19 +56,19 @@ users table will be updated to keep the user online, the server will check all t
 	- `[DELETE]` /api/rooms/{room_id}
 		- Used to delete a room
 		
-	- `[PUT]` /api/rooms/{room_id} (Not Availble)
+	- `[PUT]` /api/rooms/{room_id} **(Not Availble)**
 		- Used to update the room
 
 	- `[GET]` /api/rooms/{room_id}/users
 		- Used to get online users
 		
-	- `[GET]` /api/rooms/featured (Not Availble)
+	- `[GET]` /api/rooms/featured **(Not Availble)**
 		- Used to get featured rooms (its based on the number of online users)
 
-	- `[GET]` /api/rooms/search (Not Availble)
+	- `[GET]` /api/rooms/search **(Not Availble)**
 		- Used to search rooms by tags
 		
-1. **Messages :** (Not Availble)
+1. **Messages :** **(Not Availble)**
 	- `[GET]` /api/messeges/{room_id}
 		- Used to get all messeges in the chat room
 		- You can use the filter parameter to get just the new messeges `?filter={last_messege_time}`
