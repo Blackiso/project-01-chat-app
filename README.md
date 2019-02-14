@@ -29,11 +29,12 @@ users table will be updated to keep the user online, the server will check all t
 
 1. **Users :**
 	- `[POST]` /api/users
-		- Used to create a new user
+		- Used to join a room
 		- Request body  <br/>
 			``` json
 			{ 
-			    "username": username
+			    "username": username,
+			    "room_ID": room_id,
 			}
 			```
 	- `[PUT]` /api/users/{user_id}
@@ -56,11 +57,10 @@ users table will be updated to keep the user online, the server will check all t
 			``` json
 			{ 
 			    "name"   : room_name,
-			    "admin"  : username,
-			    "options": [
-			        {
-				   option : value
-				}
+				"options"   : {
+						"accsess" : "private",
+						"tags"    : "tag1  tag2" || null
+					}
 			    ]
 			}
 			```
@@ -86,7 +86,7 @@ users table will be updated to keep the user online, the server will check all t
 			   }
 			]
 			```
-	- `[GET]` /api/rooms/{room_id}/online-users
+	- `[GET]` /api/rooms/{room_id}/users
 		- Used to get online users
 		
 	- `[GET]` /api/rooms/featured
