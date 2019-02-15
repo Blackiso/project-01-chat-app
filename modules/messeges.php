@@ -52,15 +52,14 @@
 		}
 		// Get new messeges
 		protected function get_new() {
-			$request_data = $this->get_request_body();
-            $this->time = $request_data->time;
+            $time = date("Y-m-d")." ".$this->params->time;
             while (1) {
             	$messeges = $this->db->query("SELECT username, messege, msg_time FROM messeges 
-				WHERE room_ID = '$this->room_ID' AND msg_time >= '$this->time'");
+				WHERE room_ID = '$this->room_ID' AND msg_time >= '$time'");
 				if ($messeges) {
 					return $messeges;
 				}else {
-					sleep(10);
+					sleep(1);
 				}
             }
 		}
