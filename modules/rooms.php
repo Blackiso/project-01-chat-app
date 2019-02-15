@@ -98,7 +98,7 @@
         * @return Array 
         */
         protected function get() {
-            $subc = $this->sub_collection;
+            $subc = "get_".$this->sub_collection;
             if ($subc !== null && method_exists($this, $subc)) {
                 return $this->$subc();
             }else {
@@ -109,11 +109,13 @@
         * This method is for getting online users in the room
         * @return Array 
         */        
-        protected function users() {
+        protected function get_users() {
             if ($this->room_exist()) {
                 $users = $this->db->query("SELECT user_ID, room_ID, username, last_seen 
                     FROM users WHERE room_ID = '$this->room_ID'");
                 return $users;
+            }else {
+                $this->write_error("Room dosent exist!");
             }
         }
         /**

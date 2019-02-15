@@ -44,13 +44,14 @@
 	 					$this->connect(1);
 	 					// create tables
 	 					$msg_table_qr = $this->conn->prepare("CREATE TABLE `messeges` (
-						  `msg_ID` int(255) NOT NULL,
+						  `id` int(255) NOT NULL AUTO_INCREMENT,
 						  `room_ID` varchar(255) NOT NULL,
+						  `user_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
+						  `messege` longtext NOT NULL,
 						  `session_ID` varchar(255) NOT NULL,
-						  `msg_text` longtext NOT NULL,
 						  `msg_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
+						) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
 
 						$rooms_table_qr = $this->conn->prepare("CREATE TABLE `rooms` (
 						  `room_ID` varchar(255) NOT NULL,
@@ -62,14 +63,14 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$rooms_options_table_qr = $this->conn->prepare("CREATE TABLE `rooms_options` (
-						  `id` int(255) NOT NULL,
+						  `id` int(255) NOT NULL AUTO_INCREMENT,
 						  `room_ID` varchar(255) NOT NULL,
 						  `option_name` varchar(255) NOT NULL,
 						  `option_value` varchar(255) NOT NULL
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$users_table_qr = $this->conn->prepare("CREATE TABLE `users` (
-						  `id` int(255) NOT NULL,
+						  `id` int(255) NOT NULL AUTO_INCREMENT,
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
@@ -78,7 +79,7 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$users_options_qr = $this->conn->prepare("CREATE TABLE `users_options` (
-						  `id` int(255) NOT NULL,
+						  `id` int(255) NOT NULL AUTO_INCREMENT,
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `banned` tinyint(1) NOT NULL DEFAULT '0',

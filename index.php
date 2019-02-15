@@ -57,7 +57,8 @@
 
 	// Init App
 	$class_name = $parsed_uri->class;
-	if (array_search($class_name, ROUTES)) {
+
+	if (in_array($class_name, ROUTES)) {
 		$collection_id = isset($parsed_uri->collection_id) ? $parsed_uri->collection_id : null;
 		$sub_collection = isset($parsed_uri->sub_collection) ? $parsed_uri->sub_collection : null;
 		$params = isset($parsed_uri->params) ? $parsed_uri->params : null;

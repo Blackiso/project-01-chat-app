@@ -87,10 +87,7 @@
 
 			$params_array = explode('&', $params[1]);
 			foreach ($params_array as $value) {
-				$param = array();
-				$param['key'] = explode("=", $value)[0];
-				$param['value'] = explode("=", $value)[1];
-				array_push($return_array['params'], $param);
+				$return_array['params'][explode("=", $value)[0]] = explode("=", $value)[1];
 			}
 
 			return $return_array;
