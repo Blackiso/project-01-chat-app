@@ -183,7 +183,7 @@
         }
         // Delet inactive users
         protected function clear_inactive_users() {
-        	$qr = $this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 2 MINUTE)", false);
+        	$qr = $this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 5 MINUTE)", false);
         }
     	// Method to extract request body
 		protected function get_request_body() {

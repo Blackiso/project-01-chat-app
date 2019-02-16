@@ -59,6 +59,7 @@
     			if ($this->is_admin($this->room_ID)) {
     				$this->set_option("admin", 1);
     			}
+    			$this->clear_inactive_users();
     			$result = array();
     			$result['user_ID']    = $this->user_ID;
     			$result['username']   = $this->username;

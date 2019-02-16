@@ -33,6 +33,7 @@
     	*/
 		protected function get() {
 			$this->run_check();
+			$this->im_here();
 			// Filter request
 			$subc = "get_";
 			$subc .= isset($this->params->filter) ? $this->params->filter : "all";
@@ -69,9 +70,10 @@
     	*/
 		protected function post() {
 			$this->run_check();
+			$this->im_here();
 			// Get request body
 			$request_data = $this->get_request_body();
-			$this->message = $request_data->message;
+			$this->message = htmlentities($request_data->message);
 			// Insert username in database
 			$message_insert = $this->db->query("INSERT INTO messages 
 				(room_ID, user_ID, username, message, session_ID) 

@@ -100,6 +100,7 @@
         protected function get() {
             $subc = "get_".$this->sub_collection;
             if ($subc !== null && method_exists($this, $subc)) {
+                $this->im_here();
                 if ($this->sub_collection == "users") {
                     $current_users = intval($this->params->number);
                     while (1) {
@@ -112,7 +113,7 @@
                         }
                     }
                 }
-                // return $this->$subc();
+                return $this->$subc();
             }else {
                 $this->write_error("Request error!");
             }
