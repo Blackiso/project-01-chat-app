@@ -52,7 +52,7 @@
 		}
 		// Get new messages
 		protected function get_new() {
-            $time = date("Y-m-d")." ".$this->params->time;
+            $time = urldecode($this->params->time);
             while (1) {
             	$messages = $this->db->query("SELECT username, message, msg_time FROM messages 
 				WHERE room_ID = '$this->room_ID' AND msg_time >= '$time'");
