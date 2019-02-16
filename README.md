@@ -23,7 +23,7 @@ database.
 	- When ever the client sends a request to the server the 
 users table will be updated to keep the user online, the server will check all the uservers every period of time to delet all the users that are no longer active.
 2. **Rooms :**
-	- The user will chose a name for the room and a type then the client will send a request to the server with the room data and the user data the server will responde with room information after it creats it, in the database the server will store the room name, a unique id, admin, options and creation time, now that the user is connected to the room there is two request that will be used, the first one is to get users and the seconde one is for messeges, to get the online users the client will send a lon pull request to the server and whenever users table is updated for that room the server will respond with the new data that contains all the users online, for the messeges request it will also be a long pull request that retrieves the messeges and a normal post request to send messeges.
+	- The user will chose a name for the room and a type then the client will send a request to the server with the room data and the user data the server will responde with room information after it creats it, in the database the server will store the room name, a unique id, admin, options and creation time, now that the user is connected to the room there is two request that will be used, the first one is to get users and the seconde one is for messages, to get the online users the client will send a lon pull request to the server and whenever users table is updated for that room the server will respond with the new data that contains all the users online, for the messages request it will also be a long pull request that retrieves the messages and a normal post request to send messages.
 
 ## API
 
@@ -69,13 +69,13 @@ users table will be updated to keep the user online, the server will check all t
 		- Used to search rooms by tags
 		
 1. **Messages :**
-	- `[GET]` /api/messeges/{room_id}
-		- Used to get all messeges in the chat room
-		- You can use the filter parameter to get just the new messeges 
+	- `[GET]` /api/messages/{room_id}
+		- Used to get all messages in the chat room
+		- You can use the filter parameter to get just the new messages 
 		`?time={last messege time ex. 2019-02-15 15:21:44}`
 		
-	- `[POST]` /api/messeges/{room_id}
-		- Used to send messeges
+	- `[POST]` /api/messages/{room_id}
+		- Used to send messages
 		- Request body  <br/>
 			``` json
 			{
@@ -84,7 +84,7 @@ users table will be updated to keep the user online, the server will check all t
 			```
 ## Database Structure
 
-<img src="https://i.imgur.com/tSBFpl0.png" />
+<img src="https://i.imgur.com/O3VSpVI.png" />
 
 ## Files Structure
 > This is the files and folders structure for the API
@@ -96,7 +96,7 @@ users table will be updated to keep the user online, the server will check all t
     │   │      └── core.php         # Core api config
     │   ├── modules/  
     │   │      ├── users.php        # Users properties and methods 
-    │   │      ├── messeges.php     # Messages properties and methods 
+    │   │      ├── messages.php     # Messages properties and methods 
     │   │      └── rooms.php        # Rooms properties and methods
     │   └── index.php               # All requests will be redirected to this file
     └── ...
