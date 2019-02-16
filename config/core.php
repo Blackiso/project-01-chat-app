@@ -1,7 +1,7 @@
 <?php
 	// Define routes
 	const ROUTES = [
-		"messeges",
+		"messages",
 		"users",
 		"rooms"
 	];
@@ -122,7 +122,6 @@
 			$this->db = new DB();
 			$this->method = $method;
 		}
-
 		// Call method based on type of request
 		public function init() {
 			if (in_array($this->method, METHODS)) {
@@ -136,7 +135,6 @@
 				$this->write_error('HTTP Method Not Allowed!');
 			}
 		}
-
 		// Check if current users is the admin
 		protected function is_admin($room_ID) {
 			$admin = $this->db->check_row("rooms", array("room_ID" => $room_ID, "session_ID" => SESSID));
@@ -146,7 +144,6 @@
 				return false;
 			}
 		}
-
 		/**
         * Check if the current room exist
         * @param kill : Boolean
@@ -163,13 +160,36 @@
             }
             return true;
         }
-
+        /**
+        * This method is for getting online users in the room
+        * @return Array 
+        */        
+        protected function get_users() {
+            if ($this->room_exist()) {
+                $users = $this->db->query("SELECT user_ID, room_ID, username, last_seen 
+                    FROM users WHERE room_ID = '$this->room_ID'");
+                return $users;
+            }else {
+                $this->write_error("Room dosent exist!");
+            }
+        }
+        // Update last seen
+        protected function im_here() {
+        	$now = date("Y-m-d H:i:s");
+        	$update_qr = $this->db->query("UPDATE users SET last_seen = '$now' WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'", false);
+        	if ($update_qr) {
+        		return true;
+        	}
+        }
+        // Delet inactive users
+        protected function clear_inactive_users() {
+        	$qr = $this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 2 MINUTE)", false);
+        }
     	// Method to extract request body
 		protected function get_request_body() {
 			$entity_body = file_get_contents('php://input');
 			return json_decode($entity_body);
 		}
-
 		// Error handller
 		protected function write_error($msg) {
 			echo json_encode(array("error" => $msg));

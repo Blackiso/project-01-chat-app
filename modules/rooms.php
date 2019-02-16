@@ -21,7 +21,7 @@
         	// Setup all parameters
         	$this->room_ID = $room_ID !== null ? $room_ID : "ID".uniqid();
             $this->sub_collection = $sub_collection;
-            $this->params = $params;
+            $this->params = (Object)$params;
 
         	// Run parent constructor
         	parent::__construct($method);
@@ -100,22 +100,21 @@
         protected function get() {
             $subc = "get_".$this->sub_collection;
             if ($subc !== null && method_exists($this, $subc)) {
-                return $this->$subc();
+                if ($this->sub_collection == "users") {
+                    $current_users = intval($this->params->number);
+                    while (1) {
+                        $this->clear_inactive_users();
+                        $users = $this->get_users();
+                        if (sizeof($users) !== $current_users) {
+                            return $users;
+                        }else {
+                            sleep(1);
+                        }
+                    }
+                }
+                // return $this->$subc();
             }else {
                 $this->write_error("Request error!");
-            }
-        }
-         /**
-        * This method is for getting online users in the room
-        * @return Array 
-        */        
-        protected function get_users() {
-            if ($this->room_exist()) {
-                $users = $this->db->query("SELECT user_ID, room_ID, username, last_seen 
-                    FROM users WHERE room_ID = '$this->room_ID'");
-                return $users;
-            }else {
-                $this->write_error("Room dosent exist!");
             }
         }
         /**

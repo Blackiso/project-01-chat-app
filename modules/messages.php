@@ -7,14 +7,14 @@
 	 * @param Params : Array | Null
 	 * @return Object
 	 */
-    class messeges extends Module {
+    class messages extends Module {
     	protected $room_ID;
     	protected $user_ID;
     	protected $username;
     	protected $sub_collection;
     	protected $params;
     	protected $session_ID = SESSID;
-    	protected $messege;
+    	protected $message;
     	protected $time;
 
     	// Class constructor
@@ -28,7 +28,7 @@
 			parent::__construct($method);
 		}
 		/**
-    	* This method is for handling GET requests for messeges class
+    	* This method is for handling GET requests for messages class
     	* @return Array 
     	*/
 		protected function get() {
@@ -42,46 +42,46 @@
                 $this->write_error("Request error!");
             }
 		}
-		// Get all messeges
+		// Get all messages
 		protected function get_all() {
-			$messeges = $this->db->query("SELECT username, messege, msg_time FROM messeges 
+			$messages = $this->db->query("SELECT username, message, msg_time FROM messages 
 				WHERE room_ID = '$this->room_ID'");
-			if ($messeges) {
-				return $messeges;
+			if ($messages) {
+				return $messages;
 			}
 		}
-		// Get new messeges
+		// Get new messages
 		protected function get_new() {
             $time = date("Y-m-d")." ".$this->params->time;
             while (1) {
-            	$messeges = $this->db->query("SELECT username, messege, msg_time FROM messeges 
+            	$messages = $this->db->query("SELECT username, message, msg_time FROM messages 
 				WHERE room_ID = '$this->room_ID' AND msg_time >= '$time'");
-				if ($messeges) {
-					return $messeges;
+				if ($messages) {
+					return $messages;
 				}else {
 					sleep(1);
 				}
             }
 		}
 		/**
-    	* This method is for handling POST requests for messeges class
+    	* This method is for handling POST requests for messages class
     	* @return Array 
     	*/
 		protected function post() {
 			$this->run_check();
 			// Get request body
 			$request_data = $this->get_request_body();
-			$this->messege = $request_data->message;
+			$this->message = $request_data->message;
 			// Insert username in database
-			$message_insert = $this->db->query("INSERT INTO messeges 
-				(room_ID, user_ID, username, messege, session_ID) 
-				VALUES ('$this->room_ID', '$this->user_ID', '$this->username', '$this->messege', '$this->session_ID')", false);
+			$message_insert = $this->db->query("INSERT INTO messages 
+				(room_ID, user_ID, username, message, session_ID) 
+				VALUES ('$this->room_ID', '$this->user_ID', '$this->username', '$this->message', '$this->session_ID')", false);
 
 			if ($message_insert) {
 				$result = array();
 				$result['user_ID']  = $this->user_ID;
                 $result['username'] = $this->username;
-                $result['messege']  = $this->messege;
+                $result['message']  = $this->message;
                 $result['time']     = date("Y-m-d H:i:s");
 
                 return $result;
@@ -100,18 +100,18 @@
     }
 
     /*
-    Send messege request body
+    Send message request body
     ------------------------
     {
         "message" : "Hello World!"
     }
 
-    Send messege request returns 
+    Send message request returns 
     -------------------------------
 	{
 		"user_ID": "ID5c657d8007328",
 	    "username": "blackiso",
-	    "messege": "Hello World!",
+	    "message": "Hello World!",
 	    "time": "2019-02-15 15:25:22"
 	}
     */

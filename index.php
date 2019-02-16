@@ -45,7 +45,7 @@
 	// Init Modules files
 	require_once('modules/users.php');
 	require_once('modules/rooms.php');
-	require_once('modules/messeges.php');
+	require_once('modules/messages.php');
 
 	// Init Deve mode
 	deve_mode(1);

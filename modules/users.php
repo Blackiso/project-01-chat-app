@@ -52,7 +52,7 @@
     			$user_query = $this->db->query("INSERT INTO users (user_ID, room_ID, username, session_ID)
     						VALUES ('$this->user_ID', '$this->room_ID', '$this->username', '".SESSID."')", false);
     		}else {
-    			$user_query = true;
+    			$user_query = $this->im_here();
     		}
     		
     		if ($user_query) {
@@ -61,8 +61,9 @@
     			}
     			$result = array();
     			$result['user_ID']    = $this->user_ID;
-    			$result['room_ID']    = $this->room_ID;
     			$result['username']   = $this->username;
+    			$result['room_ID']    = $this->room_ID;
+    			$result['users']      = $this->get_users();
     			$result['session_ID'] = SESSID;
 
     			return $result;

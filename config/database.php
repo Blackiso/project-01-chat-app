@@ -43,12 +43,12 @@
 	 				if($db_create_qr->execute()) {
 	 					$this->connect(1);
 	 					// create tables
-	 					$msg_table_qr = $this->conn->prepare("CREATE TABLE `messeges` (
+	 					$msg_table_qr = $this->conn->prepare("CREATE TABLE `messages` (
 						  `id` int(255) NOT NULL AUTO_INCREMENT,
 						  `room_ID` varchar(255) NOT NULL,
 						  `user_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
-						  `messege` longtext NOT NULL,
+						  `message` longtext NOT NULL,
 						  `session_ID` varchar(255) NOT NULL,
 						  `msg_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
@@ -95,7 +95,7 @@
 						$users_options_qr->execute();
 
 						// Setup primary keys
-						$pk_change_msg = $this->conn->prepare("ALTER TABLE `messeges`
+						$pk_change_msg = $this->conn->prepare("ALTER TABLE `messages`
 						  ADD PRIMARY KEY (`msg_ID`)");
 						$pk_change_rooms = $this->conn->prepare("ALTER TABLE `rooms`
 	  					  ADD PRIMARY KEY (`room_ID`)");
