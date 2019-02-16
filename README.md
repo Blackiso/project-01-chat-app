@@ -78,9 +78,8 @@ users table will be updated to keep the user online, the server will check all t
 		- Used to send messeges
 		- Request body  <br/>
 			``` json
-			{ 
-			    "user"   : username,
-			    "message": messege_text
+			{
+				"message": "Hello World!"
 			}
 			```
 ## Database Structure
