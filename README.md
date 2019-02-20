@@ -46,8 +46,9 @@ users table will be updated to keep the user online, the server will check all t
 		- Request body  <br/>
 			``` json
 			{ 
-			    "name"   : room_name,
-			    "options": {
+			    "name"     : room_name,
+			    "username" : username,
+			    "options"  : {
 			       "accsess" : "private",
 			       "tags"    : "tag1  tag2" || null
 			    }
