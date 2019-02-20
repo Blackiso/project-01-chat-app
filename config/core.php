@@ -120,7 +120,12 @@
 		function __construct($method) {
 			// Init Database connection
 			$this->db = new DB();
+			// Get request method
 			$this->method = $method;
+			// Clear users
+            $this->clear_inactive_users();
+            // Clear rooms
+            if ($method !== null) $this->clear_inactive_rooms();
 		}
 		// Call method based on type of request
 		public function init() {
@@ -181,9 +186,13 @@
         		return true;
         	}
         }
-        // Delet inactive users
+        // Delete inactive users
         protected function clear_inactive_users() {
         	$qr = $this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 5 MINUTE)", false);
+        }
+        // Delete inactive rooms
+        protected function clear_inactive_rooms() {
+        	$qr = $this->db->query("DELETE rooms FROM rooms WHERE room_ID NOT IN (SELECT DISTINCT room_ID FROM users)", false);
         }
     	// Method to extract request body
 		protected function get_request_body() {

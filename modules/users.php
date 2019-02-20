@@ -47,6 +47,16 @@
 			$this->room_ID = $request_data->room_ID;
 			// Check if room exist
 			$this->room_exist(true);
+			// Join room
+			return $this->join_room();
+
+    	}
+    	// This method is used to add user to a room
+    	public function join_room($username = null, $room_ID = null) {
+    		if ($username !== null && $room_ID !== null) {
+    			$this->username = $username;
+    			$this->room_ID = $room_ID;
+    		}
     		// Add user to room
     		if (!$this->db->check_row("users", array("user_ID" => $this->user_ID, "room_ID" => $this->room_ID))) {
     			$user_query = $this->db->query("INSERT INTO users (user_ID, room_ID, username, session_ID)
@@ -59,11 +69,14 @@
     			if ($this->is_admin($this->room_ID)) {
     				$this->set_option("admin", 1);
     			}
+    			// Get room name
+    			$room_name = $this->db->query("SELECT room_name FROM rooms WHERE room_ID = '$this->room_ID'");
     			$this->clear_inactive_users();
     			$result = array();
     			$result['user_ID']    = $this->user_ID;
     			$result['username']   = $this->username;
     			$result['room_ID']    = $this->room_ID;
+    			$result['room_name']  = $room_name[0]['room_name'];
     			$result['users']      = $this->get_users();
     			$result['session_ID'] = SESSID;
 

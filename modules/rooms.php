@@ -12,6 +12,7 @@
         protected $room_ID;
         protected $session_ID = SESSID;
         protected $room_name;
+        protected $username;
         protected $sub_collection;
         protected $params;
         protected $options;
@@ -33,27 +34,28 @@
         protected function post() {
             // Get data form request body
             $request_data = $this->get_request_body();
+            if ($request_data->room_name == "" || $request_data->username == "") {
+                $this->write_error("Request Error!");
+            }
             $this->room_name = htmlentities($request_data->room_name);
+            $this->username = htmlentities($request_data->username);
             $this->options = $request_data->options;
 
             if (!$this->db->check_row("rooms", array("room_name" => $this->room_name))) {
-                $access = $this->options->accsess;
+                $access = $this->options->access;
                 $tags = $this->options->tags;
                 $add_room_qr = "INSERT INTO rooms (room_ID, session_ID, room_name, access, tags)
                                  VALUES ('$this->room_ID', '$this->session_ID', '$this->room_name', '$access', '$tags')";
                 $add_room = $this->db->query($add_room_qr, false);
                 if ($add_room) {
-                    $result = array();
-                    $result['room_ID']    = $this->room_ID;
-                    $result['room_name']    = $this->room_name;
-                    $result['session_ID']    = $this->session_ID;
-
+                    $user = new users(null);
+                    $result = $user->join_room($this->username, $this->room_ID);
                     return $result;
                 }else {
                     $this->write_error("Error creating room!");
                 }
             }else {
-                $this->write_error("Room name already exist!");
+                $this->write_error("Room already exist!");
             }
         }
         /**
@@ -135,8 +137,9 @@
     ------------------------
     {
         "room_name" : "black room",
+        "username"  : "backiso",
         "options"   : {
-            "accsess" : "private",
+            "access" : "private",
             "tags"    : "action, shit" || null
         }
     }
