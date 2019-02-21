@@ -50,6 +50,10 @@
 		$return_obj = (object) array();
 		// Get all uri parts
 		$uri_parts = clear_empty_array(explode('/', $uri));
+		if (empty($uri_parts)) {
+			echo json_encode(array("error" => "Please Enter a Valid URL!"));
+			exit;
+		}
 		// Get class name from uri parts
 		$return_obj->class = $uri_parts[0];
 		// Get collection id if available

@@ -44,7 +44,7 @@
 	 					$this->connect(1);
 	 					// create tables
 	 					$msg_table_qr = $this->conn->prepare("CREATE TABLE `messages` (
-						  `id` int(255) NOT NULL AUTO_INCREMENT,
+						  `id` int(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `user_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
@@ -63,14 +63,14 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$rooms_options_table_qr = $this->conn->prepare("CREATE TABLE `rooms_options` (
-						  `id` int(255) NOT NULL AUTO_INCREMENT,
+						  `id` int(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `option_name` varchar(255) NOT NULL,
 						  `option_value` varchar(255) NOT NULL
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$users_table_qr = $this->conn->prepare("CREATE TABLE `users` (
-						  `id` int(255) NOT NULL AUTO_INCREMENT,
+						  `id` int(255) NOT NULL,
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
@@ -79,7 +79,7 @@
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
 						$users_options_qr = $this->conn->prepare("CREATE TABLE `users_options` (
-						  `id` int(255) NOT NULL AUTO_INCREMENT,
+						  `id` int(255) NOT NULL,
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `banned` tinyint(1) NOT NULL DEFAULT '0',
@@ -96,7 +96,7 @@
 
 						// Setup primary keys
 						$pk_change_msg = $this->conn->prepare("ALTER TABLE `messages`
-						  ADD PRIMARY KEY (`msg_ID`)");
+						  ADD PRIMARY KEY (`id`)");
 						$pk_change_rooms = $this->conn->prepare("ALTER TABLE `rooms`
 	  					  ADD PRIMARY KEY (`room_ID`)");
 						$pk_change_rooms_options = $this->conn->prepare("ALTER TABLE `rooms_options`
@@ -112,6 +112,22 @@
 						$pk_change_rooms_options->execute();
 						$pk_change_users->execute();
 						$pk_change_users_options->execute();
+
+						// Setup AI
+						$ai_change_msg = $this->conn->prepare("ALTER TABLE `messages`
+						  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT");
+						$ai_change_rooms_options = $this->conn->prepare("ALTER TABLE `rooms_options`
+						  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT");
+						$ai_change_users = $this->conn->prepare("ALTER TABLE `users`
+						  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT");
+						$ai_change_users_options = $this->conn->prepare("ALTER TABLE `users_options`
+						  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT");
+
+						// Execute querys
+						$ai_change_msg->execute();
+						$ai_change_rooms_options->execute();
+						$ai_change_users->execute();
+						$ai_change_users_options->execute();
 	 				}
 	 			} catch (PDOException $e) {
 				    $this->db_error($e->getMessage());
