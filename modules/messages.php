@@ -45,7 +45,7 @@
 		}
 		// Get all messages
 		protected function get_all() {
-			$messages = $this->db->query("SELECT username, message, msg_time FROM messages 
+			$messages = $this->db->query("SELECT id, username, message, msg_time FROM messages 
 				WHERE room_ID = '$this->room_ID'");
 			if ($messages) {
 				return $messages;
@@ -53,10 +53,10 @@
 		}
 		// Get new messages
 		protected function get_new() {
-            $time = urldecode($this->params->time);
+            $msg_id = urldecode($this->params->id);
             while (1) {
-            	$messages = $this->db->query("SELECT username, message, msg_time FROM messages 
-				WHERE room_ID = '$this->room_ID' AND msg_time >= '$time'");
+            	$messages = $this->db->query("SELECT id, username, message, msg_time FROM messages 
+				WHERE room_ID = '$this->room_ID' AND id > '$msg_id'");
 				if ($messages) {
 					return $messages;
 				}else {
