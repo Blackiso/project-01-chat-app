@@ -60,7 +60,7 @@
     		// Add user to room
     		if (!$this->db->check_row("users", array("user_ID" => $this->user_ID, "room_ID" => $this->room_ID))) {
     			$user_query = $this->db->query("INSERT INTO users (user_ID, room_ID, username, session_ID)
-    						VALUES ('$this->user_ID', '$this->room_ID', '$this->username', '".SESSID."')", false);
+    						VALUES ('$this->user_ID', '$this->room_ID', '$this->username', '".SESSID."')");
     		}else {
     			$user_query = $this->im_here();
     		}
@@ -100,12 +100,12 @@
     	*/
     	private function set_option($option, $value) {
     		if ($this->db->check_row("users_options", array("user_ID" => $this->user_ID, "room_ID" => $this->room_ID))) {
-    			$option_query = $this->db->query("UPDATE users_options SET $option = '$value' WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'", false);
+    			$option_query = $this->db->query("UPDATE users_options SET $option = '$value' WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'");
 	    		if (!$option_query) {
 	    			$this->write_error("Option query error!");
 	    		}
     		}else {
-    			$option_query = $this->db->query("INSERT INTO users_options (user_ID, room_ID, $option) VALUES ('$this->user_ID', '$this->room_ID', '$value')", false);
+    			$option_query = $this->db->query("INSERT INTO users_options (user_ID, room_ID, $option) VALUES ('$this->user_ID', '$this->room_ID', '$value')");
 	    		if (!$option_query) {
 	    			$this->write_error("Option query error!");
 	    		}

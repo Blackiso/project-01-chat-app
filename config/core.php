@@ -185,18 +185,18 @@
         // Update last seen
         protected function im_here() {
         	$now = date("Y-m-d H:i:s");
-        	$update_qr = $this->db->query("UPDATE users SET last_seen = '$now' WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'", false);
+        	$update_qr = $this->db->query("UPDATE users SET last_seen = '$now' WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'");
         	if ($update_qr) {
         		return true;
         	}
         }
         // Delete inactive users
         protected function clear_inactive_users() {
-        	$qr = $this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 5 MINUTE)", false);
+        	$qr = $this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 5 MINUTE)");
         }
         // Delete inactive rooms
         protected function clear_inactive_rooms() {
-        	$qr = $this->db->query("DELETE rooms FROM rooms WHERE room_ID NOT IN (SELECT DISTINCT room_ID FROM users)", false);
+        	$qr = $this->db->query("DELETE rooms FROM rooms WHERE room_ID NOT IN (SELECT DISTINCT room_ID FROM users)");
         }
     	// Method to extract request body
 		protected function get_request_body() {

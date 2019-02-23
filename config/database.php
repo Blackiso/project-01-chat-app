@@ -191,15 +191,22 @@
 		* @param  Return   : Boolean
 		* @return Array | null
 		*/
-		public function query($statment, $return = true) {
+		public function query($statment) {
 			$query = $this->conn->prepare($statment);
 			$rs =  $query->execute();
-			if ($return) {
-				$result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+			if (preg_match('/^(SELECT)/', $statment)) {
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}else if (preg_match('/^(INSERT)/', $statment)) {
+				$result = (object)array();
+				$result->query = $rs;
+				if ($id = $this->conn->lastInsertId()) {
+					$result->id = $id;
+				}
+				return $result;
 			}else {
-				$result = $rs;
+				return $rs;
 			}
-			return $result;
 		}
 
 		private function db_error($msg) {

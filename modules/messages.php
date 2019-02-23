@@ -77,10 +77,11 @@
 			// Insert username in database
 			$message_insert = $this->db->query("INSERT INTO messages 
 				(room_ID, user_ID, username, message, session_ID) 
-				VALUES ('$this->room_ID', '$this->user_ID', '$this->username', '$this->message', '$this->session_ID')", false);
+				VALUES ('$this->room_ID', '$this->user_ID', '$this->username', '$this->message', '$this->session_ID')");
 
-			if ($message_insert) {
+			if ($message_insert->query) {
 				$result = array();
+				$result['id']       = $message_insert->id;
 				$result['user_ID']  = $this->user_ID;
                 $result['username'] = $this->username;
                 $result['message']  = $this->message;

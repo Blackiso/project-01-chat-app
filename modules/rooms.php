@@ -46,7 +46,7 @@
                 $tags = $this->options->tags;
                 $add_room_qr = "INSERT INTO rooms (room_ID, session_ID, room_name, access, tags)
                                  VALUES ('$this->room_ID', '$this->session_ID', '$this->room_name', '$access', '$tags')";
-                $add_room = $this->db->query($add_room_qr, false);
+                $add_room = $this->db->query($add_room_qr);
                 if ($add_room) {
                     $user = new users(null);
                     $result = $user->join_room($this->username, $this->room_ID);
@@ -80,13 +80,13 @@
                     }
                 }
                 // Delete all users from room
-                $clear_users = $this->db->query("DELETE FROM users WHERE room_ID = '$this->room_ID'", false);
+                $clear_users = $this->db->query("DELETE FROM users WHERE room_ID = '$this->room_ID'");
                 // Delete all users options
-                $clear_users_op = $this->db->query("DELETE FROM users_options WHERE room_ID = '$this->room_ID'", false);
+                $clear_users_op = $this->db->query("DELETE FROM users_options WHERE room_ID = '$this->room_ID'");
                 // Delete all room options
-                $clear_options = $this->db->query("DELETE FROM rooms_options WHERE room_ID = '$this->room_ID'", false);
+                $clear_options = $this->db->query("DELETE FROM rooms_options WHERE room_ID = '$this->room_ID'");
                 // Delete room   
-                $delete_room = $this->db->query("DELETE FROM rooms WHERE room_ID = '$this->room_ID'", false);
+                $delete_room = $this->db->query("DELETE FROM rooms WHERE room_ID = '$this->room_ID'");
 
                 if ($clear_users && $clear_users_op && $clear_options && $delete_room) {
                     return array("success" => true);
