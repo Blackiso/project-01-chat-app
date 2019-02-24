@@ -71,7 +71,7 @@
 		);
 		$returned = $app->init();
 		if ($returned !== null) {
-			echo json_encode($app->init());
+			echo json_encode($returned);
 		}
 		
 	}else {

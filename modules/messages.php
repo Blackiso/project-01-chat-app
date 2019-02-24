@@ -73,11 +73,11 @@
 
 				ob_flush();
 	        	flush();
-	        	sleep(2);
 
 	        	if (!empty($messages)) {
 					break;
 				}
+				sleep(2);
             }
 
             ob_end_flush();
