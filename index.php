@@ -69,7 +69,11 @@
 			$sub_collection, 
 			$params
 		);
-		echo json_encode($app->init());
+		$returned = $app->init();
+		if ($returned !== null) {
+			echo json_encode($app->init());
+		}
+		
 	}else {
 		header("HTTP/1.1 401 Unauthorized");
 	}

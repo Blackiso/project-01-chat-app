@@ -53,16 +53,34 @@
 		}
 		// Get new messages
 		protected function get_new() {
+			ignore_user_abort(true);
+			set_time_limit(0);
+
+			if (ob_get_level() == 0) ob_start();
+
             $msg_id = urldecode($this->params->id);
             while (1) {
+            	if (connection_aborted()) {
+					die();
+				}
+            	echo " ";
+
             	$messages = $this->db->query("SELECT id, username, message, msg_time FROM messages 
 				WHERE room_ID = '$this->room_ID' AND id > '$msg_id'");
-				if ($messages) {
-					return $messages;
-				}else {
-					sleep(1);
+				if (!empty($messages)) {
+					echo json_encode($messages);
+				}
+
+				ob_flush();
+	        	flush();
+	        	sleep(2);
+
+	        	if (!empty($messages)) {
+					break;
 				}
             }
+
+            ob_end_flush();
 		}
 		/**
     	* This method is for handling POST requests for messages class
