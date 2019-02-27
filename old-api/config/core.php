@@ -2,8 +2,8 @@
 	// Define routes
 	const ROUTES = [
 		"messages",
-		"rooms",
-		"users"
+		"users",
+		"rooms"
 	];
 	// Define allowed methods
 	const METHODS = [

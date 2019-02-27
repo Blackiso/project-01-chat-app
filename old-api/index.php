@@ -62,6 +62,7 @@
 		$collection_id = isset($parsed_uri->collection_id) ? $parsed_uri->collection_id : null;
 		$sub_collection = isset($parsed_uri->sub_collection) ? $parsed_uri->sub_collection : null;
 		$params = isset($parsed_uri->params) ? $parsed_uri->params : null;
+
 		$app = new $class_name(
 			$request_method, 
 			$collection_id, 

@@ -1,5 +1,5 @@
 <?php
-	
+
 	/**
 	 * Database Creation and Managment Class
 	 * @param NONE

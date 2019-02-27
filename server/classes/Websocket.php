@@ -7,11 +7,11 @@
 	* @return Websocket object
 	*/
 	class Websocket {
-
+		
 		protected $maxBufferSize;
 		protected $master;
-		protected $sockets;
-		protected $users;
+		protected $sockets = array();
+		protected $users = array();
 		
 		function __construct($address, $port, $bufferLength = 2048) {
 			$this->maxBufferSize = $bufferLength;
@@ -43,8 +43,9 @@
 						// Accept new Connection
 						$client = socket_accept($socket);
 						// Connect Client
-						$client_id = $this->connect($client);
-						$this->log("Client $client_id Connected on Socket $socket");
+						$id = uniqid();
+						$this->sockets[$id] = $client;
+						$this->log("Client Connected to Master Socket $socket");
 					}else {
 						// Receve data from socket
 						$num_bytes = socket_recv($socket, $buffer, $this->maxBufferSize, 0);
@@ -55,14 +56,21 @@
 						}else if($num_bytes == 0) {
 							$this->disconnect($socket);
 						}else {
-							$user = $this->get_user_by_socket($socket);
-							if (!$user->handshake) {
+							// Check handshake
+							if ($this->check_handshake($socket)) {
+								$handler = new Handler($this->users, $socket, $buffer);
+								// $handler->init();
+							}else {
 								$tmp = str_replace("\r", '', $buffer);
 								if (strpos($tmp, "\n\n") === false ) {
 									continue;
 								}
 								//Create a hanshake ...
-								if($this->handshake($user, $buffer));
+								if($user = $this->connect($socket, $buffer)) {
+									$this->handshake($user, $buffer);
+									$handler = new Handler($this->users, $socket, $buffer);
+									// $handler->user_joined();
+								}
 							}
 						}
 					}
@@ -70,16 +78,21 @@
 			}
 		}
 
-		protected function connect($socket) {
-			$temp_id = uniqid("TEMP");
-			$user = new users($socket, $temp_id);
-			$this->sockets[$temp_id] = $socket;
-			$this->users[$temp_id] = $user;
-			return $temp_id;
-		}
-
-		protected function client_connected($socket, $temp_id) {
-			// Get Session id
+		protected function connect($socket, $buffer) {
+			// Clear old socket
+			foreach ($this->sockets as $id => $_socket) {
+				if ($_socket == $socket) {
+					unset($this->sockets[$id]);
+				}
+			}
+			if(preg_match("/Sec-WebSocket-Protocol: (.*)\r\n/", $buffer, $match)){
+	            $user_ID = $match[1];
+	        }
+			$user = new User($socket, $user_ID);
+			$this->users[$user_ID] = $user;
+			$this->sockets[$user_ID] = $socket;
+			$this->log("User $user_ID Connected on $socket");
+			return $user;
 		}
 
 		protected function disconnect($socket) {
@@ -87,6 +100,15 @@
 			unset($this->users[$user->user_ID]);
 			unset($this->sockets[$user->user_ID]);
 			$this->log("User $user->user_ID Disconnected from $socket");
+		}
+
+		protected function check_handshake($socket) {
+			foreach ($this->users as $user) {
+				if ($user->socket == $socket) {
+					return true;
+				}
+			}
+			return false;
 		}
 
 		protected function get_user_by_socket($socket) {
@@ -110,25 +132,25 @@
 	        if(preg_match("/Sec-WebSocket-Key: (.*)\r\n/", $buffer, $match)){
 	            $key = $match[1];
 	        }
+	        if(preg_match("/Sec-WebSocket-Protocol: (.*)\r\n/", $buffer, $match)){
+	            $protocol = $match[1];
+	        }
 	        $this->log("Generating Handshake for $user->user_ID");
 	        $acceptKey = $key.'258EAFA5-E914-47DA-95CA-C5AB0DC85B11';
 	        $handshakeToken = base64_encode(sha1($acceptKey, true));
             $handshakeResponse = "HTTP/1.1 101 Switching Protocols\r\n".
                    "Upgrade: websocket\r\n".
                    "Connection: Upgrade\r\n".
-                   "Sec-WebSocket-Accept: $handshakeToken".
+                   "Sec-WebSocket-Accept: $handshakeToken\r\n".
+                   "Sec-WebSocket-Protocol: $protocol".
                    "\r\n\r\n";
 
             $write = socket_write($user->socket, $handshakeResponse);
             if($write !== false && $write > 0) {
             	$this->log("User $user->user_ID Established a Handshake Successfully");
-            	$this->users[$user->temp_id]->handshake = true;
+            	$this->users[$user->user_ID]->handshake = true;
             	return true;
             }
-		}
-
-		protected function get_cookies() {
-
 		}
 
 		protected function parse_headers($message) {

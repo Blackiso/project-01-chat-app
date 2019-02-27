@@ -4,14 +4,14 @@
 	ob_implicit_flush();
 
 	// Init Config files
-	require_once('../config/database.php');
 	require_once('../config/core.php');
-	// Init Modules files
-	require_once('../modules/users.php');
-	require_once('../modules/rooms.php');
-	require_once('../modules/messages.php');
-	// Init Socket
+	require_once('../config/database.php');
+	// Init Deve mode
+	deve_mode(1);
+	// Init Socket Classes
 	require_once("classes/Websocket.php");
+	require_once("classes/User.php");
+	require_once("classes/Handler.php");
 
 	$arguments = array();
 	for ($i=1; $i < sizeof($argv); $i++) { 
