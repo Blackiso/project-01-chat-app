@@ -43,10 +43,11 @@
         protected function post() {
             // Get data form request body
             $request_data = $this->get_request_body();
-            $this->username = isset($request_data->username) ? htmlentities($request_data->username) : null;
+            $this->username = isset($request_data->username) ? addslashes(htmlentities($request_data->username)) : null;
             $this->room_ID = $request_data->room_ID;
             // Check if room exist
             $this->room_exist(true);
+            $this->is_banned();
             // Join room
             return $this->join_room();
 
@@ -54,7 +55,7 @@
         // This method is used to add user to a room
         public function join_room($username = null, $room_ID = null) {
             if ($username !== null && $room_ID !== null) {
-                $this->username = $username;
+                $this->username = addslashes(htmlentities($username));
                 $this->room_ID = $room_ID;
             }
             // Add user to room
@@ -111,22 +112,18 @@
                 }
             }
         }
+
+        private function is_banned() {
+            $user = $this->db->query("SELECT user_ID, banned FROM users_options WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'");
+            if (!empty($user)) {
+               if ($user[0]['banned']) {
+                    $this->write_error("You are banned from this room!");
+               }
+            }
+        }
     }
 
-    /*
-    Join room request body
-    ----------------------
-    {
-        "username" : "blackiso",
-        "room_ID" : "ID5c64294b6cbfd"
-    }
-    
-    Join room request returns
-    -------------------------
-    {
-        "user_ID": "ID5c6429fa1ee39",
-        "room_ID": "ID5c64294b6cbfd",
-        "username": "blackiso",
-        "session_ID": "SID5c6429fa1b661"
-    }
-    */
+
+
+
+      

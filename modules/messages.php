@@ -51,37 +51,6 @@
 				return $messages;
 			}
 		}
-		// Get new messages
-		protected function get_new() {
-			ignore_user_abort(true);
-			set_time_limit(0);
-
-			if (ob_get_level() == 0) ob_start();
-
-            $msg_id = urldecode($this->params->id);
-            while (1) {
-            	if (connection_aborted()) {
-					die();
-				}
-            	echo " ";
-
-            	$messages = $this->db->query("SELECT id, username, message, msg_time FROM messages 
-				WHERE room_ID = '$this->room_ID' AND id > '$msg_id'");
-				if (!empty($messages)) {
-					echo json_encode($messages);
-				}
-
-				ob_flush();
-	        	flush();
-
-	        	if (!empty($messages)) {
-					break;
-				}
-				sleep(2);
-            }
-
-            ob_end_flush();
-		}
 		/**
     	* This method is for handling POST requests for messages class
     	* @return Array 
@@ -92,14 +61,15 @@
 			// Get request body
 			$request_data = $this->get_request_body();
 			$this->message = htmlentities($request_data->message);
+			$id = uniqid();
 			// Insert username in database
 			$message_insert = $this->db->query("INSERT INTO messages 
-				(room_ID, user_ID, username, message, session_ID) 
-				VALUES ('$this->room_ID', '$this->user_ID', '$this->username', '$this->message', '$this->session_ID')");
+				(id, room_ID, user_ID, username, message, session_ID) 
+				VALUES ('$id', '$this->room_ID', '$this->user_ID', '$this->username', '$this->message', '$this->session_ID')");
 
 			if ($message_insert->query) {
 				$result = array();
-				$result['id']       = $message_insert->id;
+				$result['id']       = $id;
 				$result['user_ID']  = $this->user_ID;
                 $result['username'] = $this->username;
                 $result['message']  = $this->message;
@@ -119,20 +89,3 @@
 			}
 		}
     }
-
-    /*
-    Send message request body
-    ------------------------
-    {
-        "message" : "Hello World!"
-    }
-
-    Send message request returns 
-    -------------------------------
-	{
-		"user_ID": "ID5c657d8007328",
-	    "username": "blackiso",
-	    "message": "Hello World!",
-	    "time": "2019-02-15 15:25:22"
-	}
-    */

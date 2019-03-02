@@ -2104,3 +2104,2367 @@
 
 [23:00:09] User ID5c770852c6658 Disconnected from Resource id #12
 
+[17:15:34] Server Started on 0.0.0.0:500
+
+[17:17:02] Client Connected to Master Socket Resource id #9
+
+[17:17:02] User ID5c7809746b09c Connected on Resource id #12
+
+[17:17:02] Generating Handshake for ID5c7809746b09c
+
+[17:17:02] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:19:17] Server Started on 0.0.0.0:500
+
+[17:19:21] Client Connected to Master Socket Resource id #9
+
+[17:19:21] User ID5c7809746b09c Connected on Resource id #12
+
+[17:19:21] Generating Handshake for ID5c7809746b09c
+
+[17:19:21] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:19:54] Server Started on 0.0.0.0:500
+
+[17:19:57] Client Connected to Master Socket Resource id #9
+
+[17:19:57] User ID5c7809746b09c Connected on Resource id #12
+
+[17:19:57] Generating Handshake for ID5c7809746b09c
+
+[17:19:57] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:20:01] Message Recived From Socket Resource id #12
+
+[17:26:17] Server Started on 0.0.0.0:500
+
+[17:29:10] Client Connected to Master Socket Resource id #9
+
+[17:29:11] User ID5c7809746b09c Connected on Resource id #12
+
+[17:29:11] Generating Handshake for ID5c7809746b09c
+
+[17:29:11] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:29:11] User ID5c7809746b09c Joined Room ID5c780bbfe12a0
+
+[17:29:28] Message Recived From Socket Resource id #12
+
+[17:37:35] Server Started on 0.0.0.0:500
+
+[17:37:49] Client Connected to Master Socket Resource id #9
+
+[17:37:50] User ID5c780e5733f9b Connected on Resource id #12
+
+[17:37:50] Generating Handshake for ID5c780e5733f9b
+
+[17:37:50] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:37:50] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:38:19] Client Connected to Master Socket Resource id #9
+
+[17:38:19] User ID5c7809746b09c Connected on Resource id #20
+
+[17:38:19] Generating Handshake for ID5c7809746b09c
+
+[17:38:19] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:38:19] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:39:21] Message Recived From Socket Resource id #20
+
+[17:39:22] An established connection was aborted by the software in your host machine.
+
+[17:39:22] User ID5c7809746b09c Disconnected from Resource id #20
+
+[17:39:46] Client Connected to Master Socket Resource id #9
+
+[17:39:46] User ID5c7809746b09c Connected on Resource id #31
+
+[17:39:46] Generating Handshake for ID5c7809746b09c
+
+[17:39:46] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:39:46] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:40:11] Server Started on 0.0.0.0:500
+
+[17:40:15] Client Connected to Master Socket Resource id #9
+
+[17:40:15] User ID5c7809746b09c Connected on Resource id #12
+
+[17:40:15] Generating Handshake for ID5c7809746b09c
+
+[17:40:15] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:40:15] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:40:41] Client Connected to Master Socket Resource id #9
+
+[17:40:41] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:40:41] Generating Handshake for ID5c780e5733f9b
+
+[17:40:41] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:40:41] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:41:04] Server Started on 0.0.0.0:500
+
+[17:41:07] Client Connected to Master Socket Resource id #9
+
+[17:41:07] User ID5c7809746b09c Connected on Resource id #12
+
+[17:41:07] Generating Handshake for ID5c7809746b09c
+
+[17:41:07] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:41:07] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:41:22] Client Connected to Master Socket Resource id #9
+
+[17:41:22] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:41:23] Generating Handshake for ID5c780e5733f9b
+
+[17:41:23] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:41:23] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:42:27] Server Started on 0.0.0.0:500
+
+[17:42:30] Client Connected to Master Socket Resource id #9
+
+[17:42:30] User ID5c7809746b09c Connected on Resource id #12
+
+[17:42:30] Generating Handshake for ID5c7809746b09c
+
+[17:42:30] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:42:30] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:42:38] Client Connected to Master Socket Resource id #9
+
+[17:42:38] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:42:38] Generating Handshake for ID5c780e5733f9b
+
+[17:42:38] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:42:38] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:44:17] Server Started on 0.0.0.0:500
+
+[17:44:20] Client Connected to Master Socket Resource id #9
+
+[17:44:20] User ID5c7809746b09c Connected on Resource id #12
+
+[17:44:20] Generating Handshake for ID5c7809746b09c
+
+[17:44:20] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:44:20] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:44:30] Client Connected to Master Socket Resource id #9
+
+[17:44:30] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:44:30] Generating Handshake for ID5c780e5733f9b
+
+[17:44:30] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:44:30] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:45:07] Server Started on 0.0.0.0:500
+
+[17:45:09] Client Connected to Master Socket Resource id #9
+
+[17:45:09] User ID5c7809746b09c Connected on Resource id #12
+
+[17:45:09] Generating Handshake for ID5c7809746b09c
+
+[17:45:09] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:45:09] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:45:16] Client Connected to Master Socket Resource id #9
+
+[17:45:16] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:45:16] Generating Handshake for ID5c780e5733f9b
+
+[17:45:16] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:45:17] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:46:05] Server Started on 0.0.0.0:500
+
+[17:46:06] Client Connected to Master Socket Resource id #9
+
+[17:46:06] User ID5c7809746b09c Connected on Resource id #12
+
+[17:46:06] Generating Handshake for ID5c7809746b09c
+
+[17:46:06] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:46:06] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:46:10] Client Connected to Master Socket Resource id #9
+
+[17:46:10] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:46:10] Generating Handshake for ID5c780e5733f9b
+
+[17:46:10] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:46:10] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:47:03] Server Started on 0.0.0.0:500
+
+[17:47:05] Client Connected to Master Socket Resource id #9
+
+[17:47:05] User ID5c7809746b09c Connected on Resource id #12
+
+[17:47:05] Generating Handshake for ID5c7809746b09c
+
+[17:47:05] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:47:06] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:47:15] Client Connected to Master Socket Resource id #9
+
+[17:47:15] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:47:15] Generating Handshake for ID5c780e5733f9b
+
+[17:47:15] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:47:15] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:48:01] Server Started on 0.0.0.0:500
+
+[17:48:04] Client Connected to Master Socket Resource id #9
+
+[17:48:04] User ID5c7809746b09c Connected on Resource id #12
+
+[17:48:04] Generating Handshake for ID5c7809746b09c
+
+[17:48:04] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:48:04] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:48:08] Client Connected to Master Socket Resource id #9
+
+[17:48:08] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:48:08] Generating Handshake for ID5c780e5733f9b
+
+[17:48:08] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:48:08] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:48:35] Server Started on 0.0.0.0:500
+
+[17:48:38] Client Connected to Master Socket Resource id #9
+
+[17:48:38] User ID5c7809746b09c Connected on Resource id #12
+
+[17:48:38] Generating Handshake for ID5c7809746b09c
+
+[17:48:38] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:48:39] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:48:43] Client Connected to Master Socket Resource id #9
+
+[17:48:43] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:48:43] Generating Handshake for ID5c780e5733f9b
+
+[17:48:43] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:48:43] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:49:57] Server Started on 0.0.0.0:500
+
+[17:49:59] Client Connected to Master Socket Resource id #9
+
+[17:49:59] User ID5c7809746b09c Connected on Resource id #12
+
+[17:49:59] Generating Handshake for ID5c7809746b09c
+
+[17:49:59] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:49:59] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:50:03] Client Connected to Master Socket Resource id #9
+
+[17:50:03] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:50:03] Generating Handshake for ID5c780e5733f9b
+
+[17:50:03] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:50:03] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:54:24] Server Started on 0.0.0.0:500
+
+[17:54:25] Client Connected to Master Socket Resource id #9
+
+[17:54:26] User ID5c7809746b09c Connected on Resource id #12
+
+[17:54:26] Generating Handshake for ID5c7809746b09c
+
+[17:54:26] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:54:26] User ID5c7809746b09c Joined Room ID5c780e56d67a7
+
+[17:54:31] Client Connected to Master Socket Resource id #9
+
+[17:54:31] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:54:31] Generating Handshake for ID5c780e5733f9b
+
+[17:54:31] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:54:31] User ID5c780e5733f9b Joined Room ID5c780e56d67a7
+
+[17:55:00] Message Recived From Socket Resource id #20
+
+[17:55:01] An established connection was aborted by the software in your host machine.
+
+[17:55:01] User ID5c780e5733f9b Disconnected from Resource id #20
+
+[17:55:03] Message Recived From Socket Resource id #12
+
+[17:55:03] An established connection was aborted by the software in your host machine.
+
+[17:55:03] User ID5c7809746b09c Disconnected from Resource id #12
+
+[17:55:51] Server Started on 0.0.0.0:500
+
+[17:55:52] Client Connected to Master Socket Resource id #9
+
+[17:55:52] User ID5c7809746b09c Connected on Resource id #12
+
+[17:55:52] Generating Handshake for ID5c7809746b09c
+
+[17:55:52] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:55:52] User ID5c7809746b09c Joined Room ID5c78127bd66b5
+
+[17:55:55] Client Connected to Master Socket Resource id #9
+
+[17:55:55] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:55:55] Generating Handshake for ID5c780e5733f9b
+
+[17:55:55] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:55:55] User ID5c780e5733f9b Joined Room ID5c78127bd66b5
+
+[17:56:48] Server Started on 0.0.0.0:500
+
+[17:56:50] Client Connected to Master Socket Resource id #9
+
+[17:56:50] User ID5c7809746b09c Connected on Resource id #12
+
+[17:56:50] Generating Handshake for ID5c7809746b09c
+
+[17:56:50] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:56:50] User ID5c7809746b09c Joined Room ID5c78127bd66b5
+
+[17:56:57] Client Connected to Master Socket Resource id #9
+
+[17:56:57] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:56:57] Generating Handshake for ID5c780e5733f9b
+
+[17:56:57] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:56:57] User ID5c780e5733f9b Joined Room ID5c78127bd66b5
+
+[17:57:06] Server Started on 0.0.0.0:500
+
+[17:58:29] Server Started on 0.0.0.0:500
+
+[17:58:32] Client Connected to Master Socket Resource id #9
+
+[17:58:32] User ID5c7809746b09c Connected on Resource id #12
+
+[17:58:32] Generating Handshake for ID5c7809746b09c
+
+[17:58:32] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:58:32] User ID5c7809746b09c Joined Room ID5c78127bd66b5
+
+[17:58:37] Client Connected to Master Socket Resource id #9
+
+[17:58:37] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:58:37] Generating Handshake for ID5c780e5733f9b
+
+[17:58:37] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:58:37] User ID5c780e5733f9b Joined Room ID5c78127bd66b5
+
+[17:59:13] Server Started on 0.0.0.0:500
+
+[17:59:18] Client Connected to Master Socket Resource id #9
+
+[17:59:18] User ID5c7809746b09c Connected on Resource id #12
+
+[17:59:18] Generating Handshake for ID5c7809746b09c
+
+[17:59:18] User ID5c7809746b09c Established a Handshake Successfully
+
+[17:59:18] User ID5c7809746b09c Joined Room ID5c78127bd66b5
+
+[17:59:22] Client Connected to Master Socket Resource id #9
+
+[17:59:22] User ID5c780e5733f9b Connected on Resource id #20
+
+[17:59:22] Generating Handshake for ID5c780e5733f9b
+
+[17:59:22] User ID5c780e5733f9b Established a Handshake Successfully
+
+[17:59:22] User ID5c780e5733f9b Joined Room ID5c78127bd66b5
+
+[18:01:21] Message Recived From Socket Resource id #12
+
+[18:01:22] An established connection was aborted by the software in your host machine.
+
+[18:01:22] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:04:14] Server Started on 0.0.0.0:500
+
+[18:04:16] Client Connected to Master Socket Resource id #9
+
+[18:04:45] Server Started on 0.0.0.0:500
+
+[18:04:51] Client Connected to Master Socket Resource id #9
+
+[18:04:51] User ID5c7809746b09c Connected on Resource id #12
+
+[18:04:51] Generating Handshake for ID5c7809746b09c
+
+[18:04:51] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:04:51] User  Joined Room
+
+[18:06:25] Server Started on 0.0.0.0:500
+
+[18:06:28] Client Connected to Master Socket Resource id #9
+
+[18:06:29] User ID5c7809746b09c Connected on Resource id #12
+
+[18:06:29] Generating Handshake for ID5c7809746b09c
+
+[18:06:29] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:06:29] User ID5c7809746b09c Joined Room ID5c7814876c4e6
+
+[18:06:34] Message Recived From Socket Resource id #12
+
+[18:06:34] The operation completed successfully.
+
+[18:06:35] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:06:48] Client Connected to Master Socket Resource id #9
+
+[18:06:48] User ID5c780e5733f9b Connected on Resource id #23
+
+[18:06:48] Generating Handshake for ID5c780e5733f9b
+
+[18:06:48] User ID5c780e5733f9b Established a Handshake Successfully
+
+[18:06:48] User ID5c780e5733f9b Joined Room
+
+[18:07:13] Message Recived From Socket Resource id #23
+
+[18:07:14] An established connection was aborted by the software in your host machine.
+
+[18:07:14] User ID5c780e5733f9b Disconnected from Resource id #23
+
+[18:07:53] Server Started on 0.0.0.0:500
+
+[18:08:04] Client Connected to Master Socket Resource id #9
+
+[18:08:04] User ID5c7809746b09c Connected on Resource id #12
+
+[18:08:04] Generating Handshake for ID5c7809746b09c
+
+[18:08:04] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:08:04] User ID5c7809746b09c Joined Room ID5c7814876c4e6
+
+[18:08:08] Message Recived From Socket Resource id #12
+
+[18:08:09] An established connection was aborted by the software in your host machine.
+
+[18:08:09] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:08:50] Client Connected to Master Socket Resource id #9
+
+[18:08:50] User ID5c7809746b09c Connected on Resource id #23
+
+[18:08:50] Generating Handshake for ID5c7809746b09c
+
+[18:08:50] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:08:50] User ID5c7809746b09c Joined Room ID5c7814876c4e6
+
+[18:09:01] Message Recived From Socket Resource id #23
+
+[18:09:01] An established connection was aborted by the software in your host machine.
+
+[18:09:01] User ID5c7809746b09c Disconnected from Resource id #23
+
+[18:14:01] Server Started on 0.0.0.0:500
+
+[18:14:21] Client Connected to Master Socket Resource id #9
+
+[18:14:21] User ID5c7809746b09c Connected on Resource id #12
+
+[18:14:21] Generating Handshake for ID5c7809746b09c
+
+[18:14:21] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:14:21] User ID5c7809746b09c Joined Room ID5c7816e99e47b
+
+[18:14:24] Socket Resource id #12 Disconnected
+
+[18:14:24] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:14:35] Client Connected to Master Socket Resource id #9
+
+[18:14:35] User ID5c7809746b09c Connected on Resource id #22
+
+[18:14:35] Generating Handshake for ID5c7809746b09c
+
+[18:14:35] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:14:35] User ID5c7809746b09c Joined Room ID5c7816e99e47b
+
+[18:14:40] Socket Resource id #22 Disconnected
+
+[18:14:40] User ID5c7809746b09c Disconnected from Resource id #22
+
+[18:15:06] Client Connected to Master Socket Resource id #9
+
+[18:15:06] User ID5c7809746b09c Connected on Resource id #32
+
+[18:15:06] Generating Handshake for ID5c7809746b09c
+
+[18:15:06] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:15:06] User ID5c7809746b09c Joined Room ID5c7816e99e47b
+
+[18:15:17] Client Connected to Master Socket Resource id #9
+
+[18:15:17] User ID5c780e5733f9b Connected on Resource id #40
+
+[18:15:17] Generating Handshake for ID5c780e5733f9b
+
+[18:15:17] User ID5c780e5733f9b Established a Handshake Successfully
+
+[18:15:17] User ID5c780e5733f9b Joined Room ID5c781712aea1f
+
+[18:15:29] Socket Resource id #32 Disconnected
+
+[18:15:29] User ID5c7809746b09c Disconnected from Resource id #32
+
+[18:15:33] Socket Resource id #40 Disconnected
+
+[18:15:33] User ID5c780e5733f9b Disconnected from Resource id #40
+
+[18:20:54] Server Started on 0.0.0.0:500
+
+[18:21:18] Client Connected to Master Socket Resource id #9
+
+[18:21:18] User ID5c7809746b09c Connected on Resource id #12
+
+[18:21:18] Generating Handshake for ID5c7809746b09c
+
+[18:21:18] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:21:18] User ID5c7809746b09c Joined Room ID5c7818881b90f
+
+[18:21:31] Client Connected to Master Socket Resource id #9
+
+[18:21:31] User ID5c780e5733f9b Connected on Resource id #20
+
+[18:21:31] Generating Handshake for ID5c780e5733f9b
+
+[18:21:31] User ID5c780e5733f9b Established a Handshake Successfully
+
+[18:21:31] User ID5c780e5733f9b Joined Room ID5c7818881b90f
+
+[18:21:40] Socket Resource id #12 Disconnected
+
+[18:21:40] User ID5c7809746b09c Left Room ID5c7818881b90f
+
+[18:21:40] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:22:45] Server Started on 0.0.0.0:500
+
+[18:23:01] Client Connected to Master Socket Resource id #9
+
+[18:23:01] User ID5c7809746b09c Connected on Resource id #12
+
+[18:23:01] Generating Handshake for ID5c7809746b09c
+
+[18:23:01] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:23:01] User ID5c7809746b09c Joined Room ID5c7818881b90f
+
+[18:23:11] Client Connected to Master Socket Resource id #9
+
+[18:23:11] User ID5c780e5733f9b Connected on Resource id #20
+
+[18:23:11] Generating Handshake for ID5c780e5733f9b
+
+[18:23:11] User ID5c780e5733f9b Established a Handshake Successfully
+
+[18:23:11] User ID5c780e5733f9b Joined Room ID5c7818881b90f
+
+[18:23:15] Socket Resource id #12 Disconnected
+
+[18:23:15] User ID5c7809746b09c Left Room ID5c7818881b90f
+
+[18:23:15] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:23:17] Socket Resource id #20 Disconnected
+
+[18:23:17] User ID5c780e5733f9b Left Room ID5c7818881b90f
+
+[18:23:17] User ID5c780e5733f9b Disconnected from Resource id #20
+
+[18:23:20] Client Connected to Master Socket Resource id #9
+
+[18:23:20] User ID5c7809746b09c Connected on Resource id #34
+
+[18:23:20] Generating Handshake for ID5c7809746b09c
+
+[18:23:20] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:23:20] User ID5c7809746b09c Joined Room ID5c7818881b90f
+
+[18:23:21] Socket Resource id #34 Disconnected
+
+[18:23:21] User ID5c7809746b09c Left Room ID5c7818881b90f
+
+[18:23:21] User ID5c7809746b09c Disconnected from Resource id #34
+
+[18:24:15] Server Started on 0.0.0.0:500
+
+[18:24:32] Client Connected to Master Socket Resource id #9
+
+[18:24:32] User ID5c7809746b09c Connected on Resource id #12
+
+[18:24:32] Generating Handshake for ID5c7809746b09c
+
+[18:24:32] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:24:32] User ID5c7809746b09c Joined Room ID5c7818881b90f
+
+[18:24:44] Client Connected to Master Socket Resource id #9
+
+[18:24:44] User ID5c780e5733f9b Connected on Resource id #20
+
+[18:24:44] Generating Handshake for ID5c780e5733f9b
+
+[18:24:44] User ID5c780e5733f9b Established a Handshake Successfully
+
+[18:24:44] User ID5c780e5733f9b Joined Room ID5c7818881b90f
+
+[18:24:58] Message Recived From Socket Resource id #20
+
+[18:25:03] Socket Resource id #12 Disconnected
+
+[18:25:03] User ID5c7809746b09c Left Room ID5c7818881b90f
+
+[18:25:03] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:25:07] Socket Resource id #20 Disconnected
+
+[18:25:07] User ID5c780e5733f9b Left Room ID5c7818881b90f
+
+[18:25:07] User ID5c780e5733f9b Disconnected from Resource id #20
+
+[18:34:38] Server Started on 0.0.0.0:500
+
+[18:35:00] Client Connected to Master Socket Resource id #9
+
+[18:35:00] User ID5c7809746b09c Connected on Resource id #12
+
+[18:35:00] Generating Handshake for ID5c7809746b09c
+
+[18:35:00] User ID5c7809746b09c Established a Handshake Successfully
+
+[18:35:00] User ID5c7809746b09c Joined Room ID5c781bc0300eb
+
+[18:35:12] Client Connected to Master Socket Resource id #9
+
+[18:35:12] User ID5c780e5733f9b Connected on Resource id #20
+
+[18:35:12] Generating Handshake for ID5c780e5733f9b
+
+[18:35:12] User ID5c780e5733f9b Established a Handshake Successfully
+
+[18:35:12] User ID5c780e5733f9b Joined Room ID5c781bc0300eb
+
+[18:35:21] Socket Resource id #20 Disconnected
+
+[18:35:21] User ID5c780e5733f9b Left Room ID5c781bc0300eb
+
+[18:35:21] User ID5c780e5733f9b Disconnected from Resource id #20
+
+[18:35:25] Client Connected to Master Socket Resource id #9
+
+[18:35:25] User ID5c780e5733f9b Connected on Resource id #31
+
+[18:35:25] Generating Handshake for ID5c780e5733f9b
+
+[18:35:25] User ID5c780e5733f9b Established a Handshake Successfully
+
+[18:35:25] User ID5c780e5733f9b Joined Room ID5c781bc0300eb
+
+[18:35:35] Message Recived From Socket Resource id #31
+
+[18:35:43] Socket Resource id #12 Disconnected
+
+[18:35:43] User ID5c7809746b09c Left Room ID5c781bc0300eb
+
+[18:35:43] User ID5c7809746b09c Disconnected from Resource id #12
+
+[18:35:51] Socket Resource id #31 Disconnected
+
+[18:35:51] User ID5c780e5733f9b Left Room ID5c781bc0300eb
+
+[18:35:51] User ID5c780e5733f9b Disconnected from Resource id #31
+
+[18:44:11] Server Started on 0.0.0.0:500
+
+[18:44:22] Server Started on 0.0.0.0:500
+
+[18:45:30] Server Started on 0.0.0.0:500
+
+[18:46:28] Server Started on 0.0.0.0:500
+
+[18:46:37] Server Started on 0.0.0.0:500
+
+[18:47:25] Server Started on 0.0.0.0:500
+
+[18:47:32] Server Started on 0.0.0.0:500
+
+[18:49:48] Server Started on 0.0.0.0:500
+
+[18:50:07] Server Started on 0.0.0.0:500
+
+[18:50:44] Server Started on 0.0.0.0:500
+
+[16:59:52] Server Started on 0.0.0.0:500
+
+[17:02:10] Client Connected to Master Socket Resource id #9
+
+[17:02:10] User ID5c795778321d4 Connected on Resource id #12
+
+[17:02:10] Generating Handshake for ID5c795778321d4
+
+[17:02:10] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:02:10] User ID5c795778321d4 Joined Room ID5c79577814a1e
+
+[17:07:34] Socket Resource id #12 Disconnected
+
+[17:07:34] User ID5c795778321d4 Left Room ID5c79577814a1e
+
+[17:07:34] User ID5c795778321d4 Disconnected from Resource id #12
+
+[17:08:27] Client Connected to Master Socket Resource id #9
+
+[17:08:27] User ID5c795778321d4 Connected on Resource id #23
+
+[17:08:27] Generating Handshake for ID5c795778321d4
+
+[17:08:27] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:08:27] User ID5c795778321d4 Joined Room ID5c7958c3cead2
+
+[17:08:38] Client Connected to Master Socket Resource id #9
+
+[17:08:38] User ID5c795798811cc Connected on Resource id #31
+
+[17:08:38] Generating Handshake for ID5c795798811cc
+
+[17:08:38] User ID5c795798811cc Established a Handshake Successfully
+
+[17:08:38] User ID5c795798811cc Joined Room ID5c7958f5e957e
+
+[17:08:48] Socket Resource id #31 Disconnected
+
+[17:08:48] User ID5c795798811cc Left Room ID5c7958f5e957e
+
+[17:08:48] User ID5c795798811cc Disconnected from Resource id #31
+
+[17:08:56] Client Connected to Master Socket Resource id #9
+
+[17:08:56] User ID5c795798811cc Connected on Resource id #42
+
+[17:08:56] Generating Handshake for ID5c795798811cc
+
+[17:08:56] User ID5c795798811cc Established a Handshake Successfully
+
+[17:08:56] User ID5c795798811cc Joined Room ID5c7958f5e957e
+
+[17:09:07] Socket Resource id #23 Disconnected
+
+[17:09:07] User ID5c795778321d4 Left Room ID5c7958c3cead2
+
+[17:09:07] User ID5c795778321d4 Disconnected from Resource id #23
+
+[17:09:08] Socket Resource id #42 Disconnected
+
+[17:09:08] User ID5c795798811cc Left Room ID5c7958f5e957e
+
+[17:09:08] User ID5c795798811cc Disconnected from Resource id #42
+
+[17:09:37] Client Connected to Master Socket Resource id #9
+
+[17:09:37] User ID5c795778321d4 Connected on Resource id #56
+
+[17:09:37] Generating Handshake for ID5c795778321d4
+
+[17:09:37] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:09:37] User ID5c795778321d4 Joined Room ID5c7958c3cead2
+
+[17:10:03] Client Connected to Master Socket Resource id #9
+
+[17:10:04] User ID5c795798811cc Connected on Resource id #64
+
+[17:10:04] Generating Handshake for ID5c795798811cc
+
+[17:10:04] User ID5c795798811cc Established a Handshake Successfully
+
+[17:10:04] User ID5c795798811cc Joined Room ID5c7958f5e957e
+
+[17:10:43] Server Started on 0.0.0.0:500
+
+[17:10:47] Client Connected to Master Socket Resource id #9
+
+[17:10:47] User ID5c795778321d4 Connected on Resource id #12
+
+[17:10:47] Generating Handshake for ID5c795778321d4
+
+[17:10:47] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:10:47] User ID5c795778321d4 Joined Room ID5c7958c3cead2
+
+[17:13:48] Socket Resource id #12 Disconnected
+
+[17:13:48] User ID5c795778321d4 Left Room ID5c7958c3cead2
+
+[17:13:48] User ID5c795778321d4 Disconnected from Resource id #12
+
+[17:13:58] Client Connected to Master Socket Resource id #9
+
+[17:13:58] User ID5c795778321d4, ID5c795a4501209 Connected on Resource id #23
+
+[17:13:58] Generating Handshake for ID5c795778321d4, ID5c795a4501209
+
+[17:13:58] User ID5c795778321d4, ID5c795a4501209 Established a Handshake Successfully
+
+[17:13:58] User ID5c795778321d4, ID5c795a4501209 Joined Room
+
+[17:13:58] The operation completed successfully.
+
+[17:13:58] User ID5c795778321d4, ID5c795a4501209 Left Room
+
+[17:13:58] User ID5c795778321d4, ID5c795a4501209 Disconnected from Resource id #23
+
+[17:14:45] Client Connected to Master Socket Resource id #9
+
+[17:14:46] User ID5c795778321d4, ID5c795a4501209 Connected on Resource id #34
+
+[17:14:46] Generating Handshake for ID5c795778321d4, ID5c795a4501209
+
+[17:14:46] User ID5c795778321d4, ID5c795a4501209 Established a Handshake Successfully
+
+[17:14:46] User ID5c795778321d4, ID5c795a4501209 Joined Room
+
+[17:14:46] The operation completed successfully.
+
+[17:14:46] User ID5c795778321d4, ID5c795a4501209 Left Room
+
+[17:14:46] User ID5c795778321d4, ID5c795a4501209 Disconnected from Resource id #34
+
+[17:15:41] Server Started on 0.0.0.0:500
+
+[17:15:44] Client Connected to Master Socket Resource id #9
+
+[17:15:44] User ID5c795778321d4, ID5c795aa6497ca Connected on Resource id #12
+
+[17:15:44] Generating Handshake for ID5c795778321d4, ID5c795aa6497ca
+
+[17:15:44] User ID5c795778321d4, ID5c795aa6497ca Established a Handshake Successfully
+
+[17:15:44] User ID5c795778321d4, ID5c795aa6497ca Joined Room
+
+[17:15:44] The operation completed successfully.
+
+[17:15:44] User ID5c795778321d4, ID5c795aa6497ca Left Room
+
+[17:15:44] User ID5c795778321d4, ID5c795aa6497ca Disconnected from Resource id #12
+
+[17:17:57] Server Started on 0.0.0.0:500
+
+[17:18:06] Client Connected to Master Socket Resource id #9
+
+[17:18:06] User ID5c795778321d4 Connected on Resource id #12
+
+[17:18:06] Generating Handshake for ID5c795778321d4
+
+[17:18:06] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:18:06] User ID5c795778321d4 Joined Room ID5c795b3a58a42
+
+[17:18:06] The operation completed successfully.
+
+[17:18:06] User ID5c795778321d4 Left Room ID5c795b3a58a42
+
+[17:18:06] User ID5c795778321d4 Disconnected from Resource id #12
+
+[17:18:46] Client Connected to Master Socket Resource id #9
+
+[17:18:46] User ID5c795778321d4 Connected on Resource id #23
+
+[17:18:46] Generating Handshake for ID5c795778321d4
+
+[17:18:46] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:18:46] User ID5c795778321d4 Joined Room ID5c795b539a8c8
+
+[17:18:46] The operation completed successfully.
+
+[17:18:46] User ID5c795778321d4 Left Room ID5c795b539a8c8
+
+[17:18:46] User ID5c795778321d4 Disconnected from Resource id #23
+
+[17:21:05] Server Started on 0.0.0.0:500
+
+[17:21:07] Client Connected to Master Socket Resource id #9
+
+[17:21:07] User ID5c795778321d4 Connected on Resource id #12
+
+[17:21:07] Generating Handshake for ID5c795778321d4
+
+[17:21:07] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:21:07] User ID5c795778321d4 Joined Room ID5c795b539a8c8
+
+[17:21:07] The operation completed successfully.
+
+[17:21:07] User ID5c795778321d4 Left Room ID5c795b539a8c8
+
+[17:21:07] User ID5c795778321d4 Disconnected from Resource id #12
+
+[17:33:59] Server Started on 0.0.0.0:500
+
+[17:34:03] Client Connected to Master Socket Resource id #9
+
+[17:34:03] User ID5c795778321d4 Connected on Resource id #12
+
+[17:34:03] Generating Handshake for ID5c795778321d4
+
+[17:34:03] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:34:03] User ID5c795778321d4 Joined Room ID5c795b539a8c8
+
+[17:34:03] The operation completed successfully.
+
+[17:34:03] User ID5c795778321d4 Left Room ID5c795b539a8c8
+
+[17:34:03] User ID5c795778321d4 Disconnected from Resource id #12
+
+[17:48:45] Server Started on 0.0.0.0:500
+
+[17:48:52] Client Connected to Master Socket Resource id #9
+
+[17:48:52] User ID5c795778321d4 Connected on Resource id #12
+
+[17:48:52] Generating Handshake for ID5c795778321d4
+
+[17:48:52] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:48:52] User ID5c795778321d4 Joined Room ID5c79627224240
+
+[17:49:22] Socket Resource id #12 Disconnected
+
+[17:49:22] User ID5c795778321d4 Left Room ID5c79627224240
+
+[17:49:22] User ID5c795778321d4 Disconnected from Resource id #12
+
+[17:49:47] Server Started on 0.0.0.0:500
+
+[17:49:48] Client Connected to Master Socket Resource id #9
+
+[17:49:48] User ID5c795778321d4 Connected on Resource id #12
+
+[17:49:48] Generating Handshake for ID5c795778321d4
+
+[17:49:48] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:49:49] User ID5c795778321d4 Joined Room ID5c79629fa5b00
+
+[17:50:20] Server Started on 0.0.0.0:500
+
+[17:50:45] Client Connected to Master Socket Resource id #9
+
+[17:50:45] User ID5c795778321d4 Connected on Resource id #12
+
+[17:50:45] Generating Handshake for ID5c795778321d4
+
+[17:50:45] User ID5c795778321d4 Established a Handshake Successfully
+
+[17:50:45] User ID5c795778321d4 Joined Room ID5c7962db6d580
+
+[17:51:00] Client Connected to Master Socket Resource id #9
+
+[17:51:00] User ID5c795798811cc Connected on Resource id #20
+
+[17:51:00] Generating Handshake for ID5c795798811cc
+
+[17:51:00] User ID5c795798811cc Established a Handshake Successfully
+
+[17:51:00] User ID5c795798811cc Joined Room ID5c7962db6d580
+
+[17:51:22] Message Recived From Socket Resource id #12
+
+[17:51:25] Socket Resource id #12 Disconnected
+
+[17:51:25] User ID5c795778321d4 Left Room ID5c7962db6d580
+
+[17:51:25] User ID5c795778321d4 Disconnected from Resource id #12
+
+[17:51:29] Socket Resource id #20 Disconnected
+
+[17:51:29] User ID5c795798811cc Left Room ID5c7962db6d580
+
+[17:51:29] User ID5c795798811cc Disconnected from Resource id #20
+
+[19:20:15] Server Started on 0.0.0.0:500
+
+[19:20:25] Client Connected to Master Socket Resource id #9
+
+[19:20:25] User ID5c795778321d4 Connected on Resource id #12
+
+[19:20:25] Generating Handshake for ID5c795778321d4
+
+[19:20:25] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:20:25] User ID5c795778321d4 Joined Room ID5c7977e68a2ae
+
+[19:22:03] Server Started on 0.0.0.0:500
+
+[19:22:22] Client Connected to Master Socket Resource id #9
+
+[19:22:22] User ID5c795778321d4 Connected on Resource id #12
+
+[19:22:22] Generating Handshake for ID5c795778321d4
+
+[19:22:22] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:22:22] User ID5c795778321d4 Joined Room ID5c79785c1d9f0
+
+[19:23:00] Socket Resource id #12 Disconnected
+
+[19:23:00] User ID5c795778321d4 Left Room ID5c79785c1d9f0
+
+[19:23:00] User ID5c795778321d4 Disconnected from Resource id #12
+
+[19:23:42] Client Connected to Master Socket Resource id #9
+
+[19:23:42] User ID5c795778321d4 Connected on Resource id #27
+
+[19:23:42] Generating Handshake for ID5c795778321d4
+
+[19:23:42] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:23:42] User ID5c795778321d4 Joined Room ID5c7978aa0adf8
+
+[19:26:48] Socket Resource id #27 Disconnected
+
+[19:26:50] User ID5c795778321d4 Left Room ID5c7978aa0adf8
+
+[19:26:50] User ID5c795778321d4 Disconnected from Resource id #27
+
+[19:27:02] Server Started on 0.0.0.0:500
+
+[19:27:11] Client Connected to Master Socket Resource id #9
+
+[19:27:11] User ID5c795778321d4 Connected on Resource id #12
+
+[19:27:11] Generating Handshake for ID5c795778321d4
+
+[19:27:11] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:27:11] User ID5c795778321d4 Joined Room ID5c79797d1ca7e
+
+[19:27:22] Client Connected to Master Socket Resource id #9
+
+[19:27:22] User ID5c795798811cc Connected on Resource id #22
+
+[19:27:22] Generating Handshake for ID5c795798811cc
+
+[19:27:22] User ID5c795798811cc Established a Handshake Successfully
+
+[19:27:22] User ID5c795798811cc Joined Room ID5c79797d1ca7e
+
+[19:31:23] Message Recived From Socket Resource id #22
+
+[19:31:50] Socket Resource id #12 Disconnected
+
+[19:31:50] User ID5c795778321d4 Left Room ID5c79797d1ca7e
+
+[19:31:50] User ID5c795778321d4 Disconnected from Resource id #12
+
+[19:32:03] Client Connected to Master Socket Resource id #9
+
+[19:32:03] User ID5c795778321d4 Connected on Resource id #40
+
+[19:32:03] Generating Handshake for ID5c795778321d4
+
+[19:32:03] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:32:03] User ID5c795778321d4 Joined Room ID5c79797d1ca7e
+
+[19:32:10] Socket Resource id #22 Disconnected
+
+[19:32:10] User ID5c795798811cc Left Room ID5c79797d1ca7e
+
+[19:32:10] User ID5c795798811cc Disconnected from Resource id #22
+
+[19:32:17] Client Connected to Master Socket Resource id #9
+
+[19:32:17] User ID5c795798811cc Connected on Resource id #55
+
+[19:32:17] Generating Handshake for ID5c795798811cc
+
+[19:32:17] User ID5c795798811cc Established a Handshake Successfully
+
+[19:32:17] User ID5c795798811cc Joined Room ID5c79797d1ca7e
+
+[19:32:22] Message Recived From Socket Resource id #55
+
+[19:33:22] Server Started on 0.0.0.0:500
+
+[19:33:25] Client Connected to Master Socket Resource id #9
+
+[19:33:25] User ID5c795778321d4 Connected on Resource id #12
+
+[19:33:25] Generating Handshake for ID5c795778321d4
+
+[19:33:25] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:33:25] User ID5c795778321d4 Joined Room ID5c79797d1ca7e
+
+[19:33:29] Client Connected to Master Socket Resource id #9
+
+[19:33:29] User ID5c795798811cc Connected on Resource id #22
+
+[19:33:29] Generating Handshake for ID5c795798811cc
+
+[19:33:29] User ID5c795798811cc Established a Handshake Successfully
+
+[19:33:29] User ID5c795798811cc Joined Room ID5c79797d1ca7e
+
+[19:33:33] Message Recived From Socket Resource id #22
+
+[19:34:03] Server Started on 0.0.0.0:500
+
+[19:34:05] Client Connected to Master Socket Resource id #9
+
+[19:34:05] User ID5c795778321d4 Connected on Resource id #12
+
+[19:34:05] Generating Handshake for ID5c795778321d4
+
+[19:34:05] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:34:05] User ID5c795778321d4 Joined Room ID5c79797d1ca7e
+
+[19:34:09] Client Connected to Master Socket Resource id #9
+
+[19:34:10] User ID5c795798811cc Connected on Resource id #22
+
+[19:34:10] Generating Handshake for ID5c795798811cc
+
+[19:34:10] User ID5c795798811cc Established a Handshake Successfully
+
+[19:34:10] User ID5c795798811cc Joined Room ID5c79797d1ca7e
+
+[19:34:12] Message Recived From Socket Resource id #22
+
+[19:34:34] Server Started on 0.0.0.0:500
+
+[19:34:36] Client Connected to Master Socket Resource id #9
+
+[19:34:36] User ID5c795778321d4 Connected on Resource id #12
+
+[19:34:36] Generating Handshake for ID5c795778321d4
+
+[19:34:37] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:34:37] User ID5c795778321d4 Joined Room ID5c79797d1ca7e
+
+[19:34:40] Client Connected to Master Socket Resource id #9
+
+[19:34:40] User ID5c795798811cc Connected on Resource id #22
+
+[19:34:40] Generating Handshake for ID5c795798811cc
+
+[19:34:40] User ID5c795798811cc Established a Handshake Successfully
+
+[19:34:40] User ID5c795798811cc Joined Room ID5c79797d1ca7e
+
+[19:34:43] Message Recived From Socket Resource id #22
+
+[19:34:43] Socket Resource id #12 Disconnected
+
+[19:34:44] User ID5c795778321d4 Left Room ID5c79797d1ca7e
+
+[19:34:44] User ID5c795778321d4 Disconnected from Resource id #12
+
+[19:35:07] Socket Resource id #22 Disconnected
+
+[19:35:07] User ID5c795798811cc Left Room ID5c79797d1ca7e
+
+[19:35:07] User ID5c795798811cc Disconnected from Resource id #22
+
+[19:35:21] Client Connected to Master Socket Resource id #9
+
+[19:35:21] User ID5c795778321d4 Connected on Resource id #45
+
+[19:35:21] Generating Handshake for ID5c795778321d4
+
+[19:35:21] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:35:21] User ID5c795778321d4 Joined Room ID5c797b642c6a2
+
+[19:35:27] Client Connected to Master Socket Resource id #9
+
+[19:35:27] User ID5c795798811cc Connected on Resource id #55
+
+[19:35:27] Generating Handshake for ID5c795798811cc
+
+[19:35:27] User ID5c795798811cc Established a Handshake Successfully
+
+[19:35:27] User ID5c795798811cc Joined Room ID5c797b642c6a2
+
+[19:35:38] Message Recived From Socket Resource id #45
+
+[19:35:39] Socket Resource id #55 Disconnected
+
+[19:35:39] User ID5c795798811cc Left Room ID5c797b642c6a2
+
+[19:35:39] User ID5c795798811cc Disconnected from Resource id #55
+
+[19:36:40] Server Started on 0.0.0.0:500
+
+[19:36:42] Client Connected to Master Socket Resource id #9
+
+[19:36:42] User ID5c795778321d4 Connected on Resource id #12
+
+[19:36:42] Generating Handshake for ID5c795778321d4
+
+[19:36:42] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:36:42] User ID5c795778321d4 Joined Room ID5c797b642c6a2
+
+[19:36:45] Client Connected to Master Socket Resource id #9
+
+[19:36:45] User ID5c795798811cc Connected on Resource id #22
+
+[19:36:45] Generating Handshake for ID5c795798811cc
+
+[19:36:45] Error Establishing Handshake for ID5c795798811cc
+
+[19:36:45] User ID5c795798811cc Joined Room ID5c797b642c6a2
+
+[19:37:19] Server Started on 0.0.0.0:500
+
+[19:37:37] Client Connected to Master Socket Resource id #9
+
+[19:37:37] User ID5c795798811cc Connected on Resource id #12
+
+[19:37:37] Generating Handshake for ID5c795798811cc
+
+[19:37:37] User ID5c795798811cc Established a Handshake Successfully
+
+[19:37:37] User ID5c795798811cc Joined Room ID5c797be7597c2
+
+[19:37:39] Client Connected to Master Socket Resource id #9
+
+[19:37:39] User ID5c795778321d4 Connected on Resource id #22
+
+[19:37:39] Generating Handshake for ID5c795778321d4
+
+[19:37:39] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:37:39] User ID5c795778321d4 Joined Room ID5c797be7597c2
+
+[19:37:47] Message Recived From Socket Resource id #22
+
+[19:37:58] Message Recived From Socket Resource id #12
+
+[19:38:16] Server Started on 0.0.0.0:500
+
+[19:38:17] Client Connected to Master Socket Resource id #9
+
+[19:38:18] User ID5c795778321d4 Connected on Resource id #12
+
+[19:38:18] Generating Handshake for ID5c795778321d4
+
+[19:38:18] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:38:18] User ID5c795778321d4 Joined Room ID5c797be7597c2
+
+[19:38:20] Client Connected to Master Socket Resource id #9
+
+[19:38:20] User ID5c795798811cc Connected on Resource id #22
+
+[19:38:20] Generating Handshake for ID5c795798811cc
+
+[19:38:20] User ID5c795798811cc Established a Handshake Successfully
+
+[19:38:20] User ID5c795798811cc Joined Room ID5c797be7597c2
+
+[19:38:28] Message Recived From Socket Resource id #22
+
+[19:39:24] Server Started on 0.0.0.0:500
+
+[19:39:27] Client Connected to Master Socket Resource id #9
+
+[19:39:27] User ID5c795778321d4 Connected on Resource id #12
+
+[19:39:27] Generating Handshake for ID5c795778321d4
+
+[19:39:27] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:39:27] User ID5c795778321d4 Joined Room ID5c797be7597c2
+
+[19:39:29] Client Connected to Master Socket Resource id #9
+
+[19:39:29] User ID5c795798811cc Connected on Resource id #22
+
+[19:39:29] Generating Handshake for ID5c795798811cc
+
+[19:39:29] User ID5c795798811cc Established a Handshake Successfully
+
+[19:39:29] User ID5c795798811cc Joined Room ID5c797be7597c2
+
+[19:39:36] Message Recived From Socket Resource id #22
+
+[19:40:13] Server Started on 0.0.0.0:500
+
+[19:40:16] Client Connected to Master Socket Resource id #9
+
+[19:40:16] User ID5c795778321d4 Connected on Resource id #12
+
+[19:40:16] Generating Handshake for ID5c795778321d4
+
+[19:40:16] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:40:16] User ID5c795778321d4 Joined Room ID5c797be7597c2
+
+[19:40:19] Client Connected to Master Socket Resource id #9
+
+[19:40:19] User ID5c795798811cc Connected on Resource id #22
+
+[19:40:19] Generating Handshake for ID5c795798811cc
+
+[19:40:19] User ID5c795798811cc Established a Handshake Successfully
+
+[19:40:19] User ID5c795798811cc Joined Room ID5c797be7597c2
+
+[19:40:22] Message Recived From Socket Resource id #22
+
+[19:40:22] Socket Resource id #12 Disconnected
+
+[19:40:22] User ID5c795778321d4 Left Room ID5c797be7597c2
+
+[19:40:22] User ID5c795778321d4 Disconnected from Resource id #12
+
+[19:45:23] Server Started on 0.0.0.0:500
+
+[19:45:36] Client Connected to Master Socket Resource id #9
+
+[19:45:36] User ID5c795778321d4 Connected on Resource id #12
+
+[19:45:36] Generating Handshake for ID5c795778321d4
+
+[19:45:37] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:45:37] User ID5c795778321d4 Joined Room ID5c797dcdeeb34
+
+[19:45:46] Client Connected to Master Socket Resource id #9
+
+[19:45:47] User ID5c795798811cc Connected on Resource id #22
+
+[19:45:47] Generating Handshake for ID5c795798811cc
+
+[19:45:47] User ID5c795798811cc Established a Handshake Successfully
+
+[19:45:47] User ID5c795798811cc Joined Room ID5c797dcdeeb34
+
+[19:45:50] Message Recived From Socket Resource id #22
+
+[19:45:50] Socket Resource id #12 Disconnected
+
+[19:45:50] User ID5c795778321d4 Left Room ID5c797dcdeeb34
+
+[19:45:50] User ID5c795778321d4 Disconnected from Resource id #12
+
+[19:49:43] Server Started on 0.0.0.0:500
+
+[19:49:55] Client Connected to Master Socket Resource id #9
+
+[19:49:55] User ID5c795778321d4 Connected on Resource id #12
+
+[19:49:55] Generating Handshake for ID5c795778321d4
+
+[19:49:55] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:49:55] User ID5c795778321d4 Joined Room ID5c797ed02c7a9
+
+[19:50:04] Client Connected to Master Socket Resource id #9
+
+[19:50:04] User ID5c795798811cc Connected on Resource id #22
+
+[19:50:04] Generating Handshake for ID5c795798811cc
+
+[19:50:04] User ID5c795798811cc Established a Handshake Successfully
+
+[19:50:04] User ID5c795798811cc Joined Room ID5c797ed02c7a9
+
+[19:50:09] Message Recived From Socket Resource id #22
+
+[19:50:09] Socket Resource id #12 Disconnected
+
+[19:50:09] User ID5c795778321d4 Left Room ID5c797ed02c7a9
+
+[19:50:09] User ID5c795778321d4 Disconnected from Resource id #12
+
+[19:56:19] Server Started on 0.0.0.0:500
+
+[19:56:29] Client Connected to Master Socket Resource id #9
+
+[19:56:29] User ID5c795778321d4 Connected on Resource id #12
+
+[19:56:29] Generating Handshake for ID5c795778321d4
+
+[19:56:29] User ID5c795778321d4 Established a Handshake Successfully
+
+[19:56:30] User ID5c795778321d4 Joined Room ID5c79805bd4056
+
+[19:56:47] Client Connected to Master Socket Resource id #9
+
+[19:56:47] User ID5c795798811cc Connected on Resource id #22
+
+[19:56:47] Generating Handshake for ID5c795798811cc
+
+[19:56:47] User ID5c795798811cc Established a Handshake Successfully
+
+[19:56:47] User ID5c795798811cc Joined Room ID5c79805bd4056
+
+[19:56:50] Message Recived From Socket Resource id #22
+
+[19:56:50] Socket Resource id #12 Disconnected
+
+[19:56:50] User ID5c795778321d4 Left Room ID5c79805bd4056
+
+[19:56:50] User ID5c795778321d4 Disconnected from Resource id #12
+
+[20:04:13] Server Started on 0.0.0.0:500
+
+[20:04:27] Client Connected to Master Socket Resource id #9
+
+[20:04:27] User ID5c795778321d4 Connected on Resource id #12
+
+[20:04:27] Generating Handshake for ID5c795778321d4
+
+[20:04:27] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:04:27] User ID5c795778321d4 Joined Room ID5c798239be101
+
+[20:04:37] Client Connected to Master Socket Resource id #9
+
+[20:04:37] User ID5c795798811cc Connected on Resource id #22
+
+[20:04:38] Generating Handshake for ID5c795798811cc
+
+[20:04:38] User ID5c795798811cc Established a Handshake Successfully
+
+[20:04:38] User ID5c795798811cc Joined Room ID5c798239be101
+
+[20:04:38] The operation completed successfully.
+ => 0
+
+[20:05:05] Message Recived From Socket Resource id #22
+
+[20:05:06] The operation completed successfully.
+ => 0
+
+[20:05:06] Socket Resource id #12 Disconnected
+
+[20:05:06] User ID5c795778321d4 Left Room ID5c798239be101
+
+[20:05:06] The operation completed successfully.
+ => 0
+
+[20:05:06] User ID5c795778321d4 Disconnected from Resource id #12
+
+[20:05:53] Server Started on 0.0.0.0:500
+
+[20:05:59] Client Connected to Master Socket Resource id #9
+
+[20:06:00] User ID5c795778321d4 Connected on Resource id #12
+
+[20:06:00] Generating Handshake for ID5c795778321d4
+
+[20:06:00] Error Establishing Handshake for ID5c795778321d4
+
+[20:06:00] User ID5c795778321d4 Joined Room ID5c798239be101
+
+[20:06:14] Server Started on 0.0.0.0:500
+
+[20:06:18] Client Connected to Master Socket Resource id #9
+
+[20:06:18] User ID5c795778321d4 Connected on Resource id #12
+
+[20:06:18] Generating Handshake for ID5c795778321d4
+
+[20:06:18] Error Establishing Handshake for ID5c795778321d4
+
+[20:06:18] User ID5c795778321d4 Joined Room ID5c798239be101
+
+[20:06:45] Server Started on 0.0.0.0:500
+
+[20:06:51] Client Connected to Master Socket Resource id #9
+
+[20:06:51] User ID5c795798811cc Connected on Resource id #12
+
+[20:06:51] Generating Handshake for ID5c795798811cc
+
+[20:06:51] User ID5c795798811cc Established a Handshake Successfully
+
+[20:06:51] User ID5c795798811cc Joined Room ID5c7982c1b956e
+
+[20:06:59] Client Connected to Master Socket Resource id #9
+
+[20:06:59] User ID5c795778321d4 Connected on Resource id #22
+
+[20:06:59] Generating Handshake for ID5c795778321d4
+
+[20:06:59] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:06:59] User ID5c795778321d4 Joined Room ID5c7982c1b956e
+
+[20:06:59] The operation completed successfully.
+ => 0
+
+[20:07:03] Message Recived From Socket Resource id #22
+
+[20:07:03] The operation completed successfully.
+ => 0
+
+[20:08:44] Server Started on 0.0.0.0:500
+
+[20:08:59] Client Connected to Master Socket Resource id #9
+
+[20:08:59] User ID5c795778321d4 Connected on Resource id #12
+
+[20:08:59] Generating Handshake for ID5c795778321d4
+
+[20:08:59] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:08:59] User ID5c795778321d4 Joined Room ID5c798346eebc3
+
+[20:09:10] Client Connected to Master Socket Resource id #9
+
+[20:09:10] User ID5c795798811cc Connected on Resource id #22
+
+[20:09:10] Generating Handshake for ID5c795798811cc
+
+[20:09:10] User ID5c795798811cc Established a Handshake Successfully
+
+[20:09:10] User ID5c795798811cc Joined Room ID5c798346eebc3
+
+[20:09:10] The operation completed successfully.
+ => 0
+
+[20:09:15] Message Recived From Socket Resource id #22
+
+[20:09:15] The operation completed successfully.
+ => 0
+
+[20:10:06] Message Recived From Socket Resource id #12
+
+[20:10:06] The operation completed successfully.
+ => 0
+
+[20:10:24] Socket Resource id #22 Disconnected
+
+[20:10:24] User ID5c795798811cc Left Room ID5c798346eebc3
+
+[20:10:24] The operation completed successfully.
+ => 0
+
+[20:10:24] User ID5c795798811cc Disconnected from Resource id #22
+
+[20:10:24] Socket Resource id #12 Disconnected
+
+[20:10:24] User ID5c795778321d4 Left Room ID5c798346eebc3
+
+[20:10:24] User ID5c795778321d4 Disconnected from Resource id #12
+
+[20:10:26] Client Connected to Master Socket Resource id #9
+
+[20:10:26] User ID5c795798811cc Connected on Resource id #52
+
+[20:10:26] Generating Handshake for ID5c795798811cc
+
+[20:10:26] Error Establishing Handshake for ID5c795798811cc
+
+[20:10:26] User ID5c795798811cc Joined Room ID5c798346eebc3
+
+[20:10:40] Server Started on 0.0.0.0:500
+
+[20:10:52] Client Connected to Master Socket Resource id #9
+
+[20:10:52] User ID5c795798811cc Connected on Resource id #12
+
+[20:10:52] Generating Handshake for ID5c795798811cc
+
+[20:10:52] User ID5c795798811cc Established a Handshake Successfully
+
+[20:10:52] User ID5c795798811cc Joined Room ID5c7983b57e0ca
+
+[20:11:07] Client Connected to Master Socket Resource id #9
+
+[20:11:07] User ID5c795778321d4 Connected on Resource id #22
+
+[20:11:07] Generating Handshake for ID5c795778321d4
+
+[20:11:07] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:11:08] User ID5c795778321d4 Joined Room ID5c7983b57e0ca
+
+[20:11:08] The operation completed successfully.
+ => 0
+
+[20:11:16] Message Recived From Socket Resource id #12
+
+[20:11:16] The operation completed successfully.
+ => 0
+
+[20:11:48] Socket Resource id #12 Disconnected
+
+[20:11:48] User ID5c795798811cc Left Room ID5c7983b57e0ca
+
+[20:11:48] The operation completed successfully.
+ => 0
+
+[20:11:48] User ID5c795798811cc Disconnected from Resource id #12
+
+[20:11:48] Socket Resource id #22 Disconnected
+
+[20:11:48] User ID5c795778321d4 Left Room ID5c7983b57e0ca
+
+[20:11:49] User ID5c795778321d4 Disconnected from Resource id #22
+
+[20:12:01] Client Connected to Master Socket Resource id #9
+
+[20:12:01] User ID5c795798811cc Connected on Resource id #48
+
+[20:12:01] Generating Handshake for ID5c795798811cc
+
+[20:12:01] Error Establishing Handshake for ID5c795798811cc
+
+[20:12:01] User ID5c795798811cc Joined Room ID5c7983b57e0ca
+
+[20:12:46] Server Started on 0.0.0.0:500
+
+[20:12:48] Client Connected to Master Socket Resource id #9
+
+[20:12:48] User ID5c795778321d4 Connected on Resource id #12
+
+[20:12:49] Generating Handshake for ID5c795778321d4
+
+[20:12:49] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:12:49] User ID5c795778321d4 Joined Room ID5c79842877ea0
+
+[20:12:56] Socket Resource id #12 Disconnected
+
+[20:12:56] User ID5c795778321d4 Left Room ID5c79842877ea0
+
+[20:12:56] User ID5c795778321d4 Disconnected from Resource id #12
+
+[20:12:58] Client Connected to Master Socket Resource id #9
+
+[20:12:58] User ID5c795778321d4 Connected on Resource id #27
+
+[20:12:58] Generating Handshake for ID5c795778321d4
+
+[20:12:58] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:12:58] User ID5c795778321d4 Joined Room ID5c79842877ea0
+
+[20:13:15] Client Connected to Master Socket Resource id #9
+
+[20:13:15] User ID5c795798811cc Connected on Resource id #37
+
+[20:13:15] Generating Handshake for ID5c795798811cc
+
+[20:13:15] User ID5c795798811cc Established a Handshake Successfully
+
+[20:13:15] User ID5c795798811cc Joined Room ID5c79842877ea0
+
+[20:13:15] The operation completed successfully.
+ => 0
+
+[20:13:19] Socket Resource id #27 Disconnected
+
+[20:13:19] User ID5c795778321d4 Left Room ID5c79842877ea0
+
+[20:13:19] The operation completed successfully.
+ => 0
+
+[20:13:19] User ID5c795778321d4 Disconnected from Resource id #27
+
+[20:13:24] Client Connected to Master Socket Resource id #9
+
+[20:13:24] User ID5c795778321d4 Connected on Resource id #54
+
+[20:13:24] Generating Handshake for ID5c795778321d4
+
+[20:13:24] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:13:24] User ID5c795778321d4 Joined Room ID5c79842877ea0
+
+[20:13:24] The operation completed successfully.
+ => 0
+
+[20:13:32] Message Recived From Socket Resource id #54
+
+[20:13:32] The operation completed successfully.
+ => 0
+
+[20:15:14] Server Started on 0.0.0.0:500
+
+[20:15:17] Client Connected to Master Socket Resource id #9
+
+[20:15:17] User ID5c795778321d4 Connected on Resource id #12
+
+[20:15:17] Generating Handshake for ID5c795778321d4
+
+[20:15:17] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:15:17] User ID5c795778321d4 Joined Room ID5c79842877ea0
+
+[20:15:22] Client Connected to Master Socket Resource id #9
+
+[20:15:22] User ID5c795798811cc Connected on Resource id #22
+
+[20:15:22] Generating Handshake for ID5c795798811cc
+
+[20:15:22] User ID5c795798811cc Established a Handshake Successfully
+
+[20:15:22] User ID5c795798811cc Joined Room ID5c79842877ea0
+
+[20:15:22] The operation completed successfully.
+ => 0
+
+[20:15:38] Message Recived From Socket Resource id #12
+
+[20:15:38] The operation completed successfully.
+ => 0
+
+[20:15:46] Socket Resource id #22 Disconnected
+
+[20:15:46] User ID5c795798811cc Left Room ID5c79842877ea0
+
+[20:15:46] The operation completed successfully.
+ => 0
+
+[20:15:46] User ID5c795798811cc Disconnected from Resource id #22
+
+[20:16:04] Client Connected to Master Socket Resource id #9
+
+[20:16:04] User ID5c795798811cc Connected on Resource id #43
+
+[20:16:04] Generating Handshake for ID5c795798811cc
+
+[20:16:04] User ID5c795798811cc Established a Handshake Successfully
+
+[20:16:04] User ID5c795798811cc Joined Room ID5c79842877ea0
+
+[20:16:04] The operation completed successfully.
+ => 0
+
+[20:16:23] Server Started on 0.0.0.0:500
+
+[20:16:29] Client Connected to Master Socket Resource id #9
+
+[20:16:30] User ID5c795778321d4 Connected on Resource id #12
+
+[20:16:30] Generating Handshake for ID5c795778321d4
+
+[20:16:30] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:16:30] User ID5c795778321d4 Joined Room ID5c79842877ea0
+
+[20:16:33] Client Connected to Master Socket Resource id #9
+
+[20:16:33] User ID5c795798811cc Connected on Resource id #22
+
+[20:16:33] Generating Handshake for ID5c795798811cc
+
+[20:16:33] User ID5c795798811cc Established a Handshake Successfully
+
+[20:16:33] User ID5c795798811cc Joined Room ID5c79842877ea0
+
+[20:16:33] The operation completed successfully.
+ => 0
+
+[20:16:45] Message Recived From Socket Resource id #22
+
+[20:16:45] The operation completed successfully.
+ => 0
+
+[20:18:26] Server Started on 0.0.0.0:500
+
+[20:18:29] Client Connected to Master Socket Resource id #9
+
+[20:18:29] User ID5c795778321d4 Connected on Resource id #12
+
+[20:18:29] Generating Handshake for ID5c795778321d4
+
+[20:18:29] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:18:29] User ID5c795778321d4 Joined Room ID5c79842877ea0
+
+[20:18:33] Client Connected to Master Socket Resource id #9
+
+[20:18:33] User ID5c795798811cc Connected on Resource id #22
+
+[20:18:33] Generating Handshake for ID5c795798811cc
+
+[20:18:33] User ID5c795798811cc Established a Handshake Successfully
+
+[20:18:33] User ID5c795798811cc Joined Room ID5c79842877ea0
+
+[20:18:33] The operation completed successfully.
+ => 0
+
+[20:18:39] Message Recived From Socket Resource id #12
+
+[20:18:39] The operation completed successfully.
+ => 0
+
+[20:20:06] Server Started on 0.0.0.0:500
+
+[20:20:24] Client Connected to Master Socket Resource id #9
+
+[20:20:24] User ID5c795778321d4 Connected on Resource id #12
+
+[20:20:24] Generating Handshake for ID5c795778321d4
+
+[20:20:24] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:20:24] User ID5c795778321d4 Joined Room ID5c7985f61896e
+
+[20:20:33] Client Connected to Master Socket Resource id #9
+
+[20:20:33] User ID5c795798811cc Connected on Resource id #22
+
+[20:20:33] Generating Handshake for ID5c795798811cc
+
+[20:20:33] User ID5c795798811cc Established a Handshake Successfully
+
+[20:20:34] User ID5c795798811cc Joined Room ID5c7985f61896e
+
+[20:20:40] Message Recived From Socket Resource id #22
+
+[20:21:01] Message Recived From Socket Resource id #12
+
+[20:22:01] Message Recived From Socket Resource id #22
+
+[20:22:25] Message Recived From Socket Resource id #12
+
+[20:23:14] Server Started on 0.0.0.0:500
+
+[20:23:19] Client Connected to Master Socket Resource id #9
+
+[20:23:19] User ID5c795778321d4 Connected on Resource id #12
+
+[20:23:19] Generating Handshake for ID5c795778321d4
+
+[20:23:19] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:23:19] User ID5c795778321d4 Joined Room ID5c7985f61896e
+
+[20:23:22] Client Connected to Master Socket Resource id #9
+
+[20:23:23] User ID5c795798811cc Connected on Resource id #22
+
+[20:23:23] Generating Handshake for ID5c795798811cc
+
+[20:23:23] User ID5c795798811cc Established a Handshake Successfully
+
+[20:23:23] User ID5c795798811cc Joined Room ID5c7985f61896e
+
+[20:23:23] The operation completed successfully.
+
+[20:23:25] Message Recived From Socket Resource id #22
+
+[20:23:25] The operation completed successfully.
+
+[20:23:29] Message Recived From Socket Resource id #12
+
+[20:23:29] The operation completed successfully.
+
+[20:24:26] Client Connected to Master Socket Resource id #9
+
+[20:24:26] User ID5c795778321d4 Connected on Resource id #41
+
+[20:24:26] Generating Handshake for ID5c795778321d4
+
+[20:24:26] User ID5c795778321d4 Established a Handshake Successfully
+
+[20:24:26] User ID5c795778321d4 Joined Room ID5c7985f61896e
+
+[20:24:26] The operation completed successfully.
+
+[20:24:58] Client Connected to Master Socket Resource id #9
+
+[20:24:58] User ID5c798703f05e5 Connected on Resource id #52
+
+[20:24:58] Generating Handshake for ID5c798703f05e5
+
+[20:24:58] User ID5c798703f05e5 Established a Handshake Successfully
+
+[20:24:58] User ID5c798703f05e5 Joined Room ID5c7985f61896e
+
+[20:24:58] The operation completed successfully.
+
+[20:24:58] The operation completed successfully.
+
+[20:25:08] Message Recived From Socket Resource id #52
+
+[20:25:08] The operation completed successfully.
+
+[20:25:08] The operation completed successfully.
+
+[20:25:14] Message Recived From Socket Resource id #41
+
+[20:25:14] The operation completed successfully.
+
+[20:25:14] The operation completed successfully.
+
+[20:25:23] Socket Resource id #52 Disconnected
+
+[20:25:23] User ID5c798703f05e5 Left Room ID5c7985f61896e
+
+[20:25:23] The operation completed successfully.
+
+[20:25:23] The operation completed successfully.
+
+[20:25:23] User ID5c798703f05e5 Disconnected from Resource id #52
+
+[21:59:37] Socket Resource id #41 Disconnected
+
+[21:59:38] User ID5c795778321d4 Left Room ID5c7985f61896e
+
+[21:59:38] The operation completed successfully.
+
+[21:59:38] User ID5c795778321d4 Disconnected from Resource id #41
+
+[21:59:48] Socket Resource id #22 Disconnected
+
+[21:59:48] User ID5c795798811cc Left Room ID5c7985f61896e
+
+[21:59:48] User ID5c795798811cc Disconnected from Resource id #22
+
+[21:59:58] Client Connected to Master Socket Resource id #9
+
+[21:59:58] User ID5c795778321d4 Connected on Resource id #92
+
+[21:59:58] Generating Handshake for ID5c795778321d4
+
+[21:59:58] User ID5c795778321d4 Established a Handshake Successfully
+
+[21:59:58] User ID5c795778321d4 Joined Room ID5c799d4ac1af8
+
+[22:00:10] Client Connected to Master Socket Resource id #9
+
+[22:00:10] User ID5c795798811cc Connected on Resource id #102
+
+[22:00:10] Generating Handshake for ID5c795798811cc
+
+[22:00:10] User ID5c795798811cc Established a Handshake Successfully
+
+[22:00:11] User ID5c795798811cc Joined Room ID5c799d4ac1af8
+
+[22:00:11] The operation completed successfully.
+
+[22:00:19] Message Recived From Socket Resource id #102
+
+[22:00:19] The operation completed successfully.
+
+[22:00:30] Message Recived From Socket Resource id #102
+
+[22:00:30] The operation completed successfully.
+
+[22:00:38] Message Recived From Socket Resource id #92
+
+[22:00:38] The operation completed successfully.
+
+[22:00:41] Socket Resource id #92 Disconnected
+
+[22:00:41] User ID5c795778321d4 Left Room ID5c799d4ac1af8
+
+[22:00:41] The operation completed successfully.
+
+[22:00:41] User ID5c795778321d4 Disconnected from Resource id #92
+
+[22:00:48] Client Connected to Master Socket Resource id #9
+
+[22:00:48] User ID5c795778321d4 Connected on Resource id #131
+
+[22:00:48] Generating Handshake for ID5c795778321d4
+
+[22:00:49] User ID5c795778321d4 Established a Handshake Successfully
+
+[22:00:49] User ID5c795778321d4 Joined Room ID5c799d4ac1af8
+
+[22:00:49] The operation completed successfully.
+
+[22:05:51] Client Connected to Master Socket Resource id #9
+
+[22:05:51] User ID5c795778321d4 Connected on Resource id #142
+
+[22:05:51] Generating Handshake for ID5c795778321d4
+
+[22:05:51] User ID5c795778321d4 Established a Handshake Successfully
+
+[22:05:51] User ID5c795778321d4 Joined Room ID5c799d4ac1af8
+
+[22:05:51] The operation completed successfully.
+
+[22:06:10] Server Started on 0.0.0.0:500
+
+[16:19:41] Server Started on 0.0.0.0:500
+
+[16:19:55] Client Connected to Master Socket Resource id #9
+
+[16:19:55] User ID5c7a9f18b0a8b Connected on Resource id #12
+
+[16:19:55] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:19:55] User ID5c7a9f18b0a8b Established a Handshake Successfully
+
+[16:19:55] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:20:05] Client Connected to Master Socket Resource id #9
+
+[16:20:05] User ID5c7a9f2448cbc Connected on Resource id #22
+
+[16:20:05] Generating Handshake for ID5c7a9f2448cbc
+
+[16:20:05] User ID5c7a9f2448cbc Established a Handshake Successfully
+
+[16:20:05] User ID5c7a9f2448cbc Joined Room ID5c7a9f185b545
+
+[16:20:05] The operation completed successfully.
+
+[16:20:11] Message Recived From Socket Resource id #22
+
+[16:20:11] The operation completed successfully.
+
+[16:20:22] Message Recived From Socket Resource id #12
+
+[16:20:22] The operation completed successfully.
+
+[16:20:32] Socket Resource id #12 Disconnected
+
+[16:20:32] User ID5c7a9f18b0a8b Left Room ID5c7a9f185b545
+
+[16:20:32] The operation completed successfully.
+
+[16:20:32] User ID5c7a9f18b0a8b Disconnected from Resource id #12
+
+[16:20:38] Client Connected to Master Socket Resource id #9
+
+[16:20:39] User ID5c7a9f18b0a8b Connected on Resource id #47
+
+[16:20:39] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:20:39] User ID5c7a9f18b0a8b Established a Handshake Successfully
+
+[16:20:39] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:20:39] The operation completed successfully.
+
+[16:22:57] Socket Resource id #22 Disconnected
+
+[16:22:57] User ID5c7a9f2448cbc Left Room ID5c7a9f185b545
+
+[16:22:57] The operation completed successfully.
+
+[16:22:57] User ID5c7a9f2448cbc Disconnected from Resource id #22
+
+[16:23:00] Socket Resource id #47 Disconnected
+
+[16:23:00] User ID5c7a9f18b0a8b Left Room ID5c7a9f185b545
+
+[16:23:00] User ID5c7a9f18b0a8b Disconnected from Resource id #47
+
+[16:23:09] Client Connected to Master Socket Resource id #9
+
+[16:23:09] User ID5c7a9f2448cbc Connected on Resource id #69
+
+[16:23:09] Generating Handshake for ID5c7a9f2448cbc
+
+[16:23:09] User ID5c7a9f2448cbc Established a Handshake Successfully
+
+[16:23:09] User ID5c7a9f2448cbc Joined Room ID5c7a9f185b545
+
+[16:23:11] Socket Resource id #69 Disconnected
+
+[16:23:11] User ID5c7a9f2448cbc Left Room ID5c7a9f185b545
+
+[16:23:11] User ID5c7a9f2448cbc Disconnected from Resource id #69
+
+[16:23:31] Client Connected to Master Socket Resource id #9
+
+[16:23:31] User ID5c7a9f18b0a8b Connected on Resource id #84
+
+[16:23:31] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:23:31] User ID5c7a9f18b0a8b Established a Handshake Successfully
+
+[16:23:31] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:23:36] Socket Resource id #84 Disconnected
+
+[16:23:37] User ID5c7a9f18b0a8b Left Room ID5c7a9f185b545
+
+[16:23:37] User ID5c7a9f18b0a8b Disconnected from Resource id #84
+
+[16:24:46] Server Started on 0.0.0.0:500
+
+[16:24:50] Client Connected to Master Socket Resource id #9
+
+[16:24:50] User ID5c7a9f18b0a8b Connected on Resource id #12
+
+[16:24:50] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:24:50] User ID5c7a9f18b0a8b Established a Handshake Successfully
+
+[16:24:50] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:24:56] Socket Resource id #12 Disconnected
+
+[16:24:56] User ID5c7a9f18b0a8b Left Room ID5c7a9f185b545
+
+[16:24:56] User ID5c7a9f18b0a8b Disconnected from Resource id #12
+
+[16:24:59] Client Connected to Master Socket Resource id #9
+
+[16:24:59] User ID5c7a9f18b0a8b Connected on Resource id #27
+
+[16:24:59] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:24:59] Error Establishing Handshake for ID5c7a9f18b0a8b
+
+[16:24:59] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:26:05] Server Started on 0.0.0.0:500
+
+[16:26:09] Client Connected to Master Socket Resource id #9
+
+[16:26:09] User ID5c7a9f18b0a8b Connected on Resource id #12
+
+[16:26:09] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:26:09] Error Establishing Handshake for ID5c7a9f18b0a8b
+
+[16:26:09] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:27:10] Server Started on 0.0.0.0:500
+
+[16:27:13] Client Connected to Master Socket Resource id #9
+
+[16:27:13] User ID5c7a9f18b0a8b Connected on Resource id #12
+
+[16:27:13] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:27:13] Error Establishing Handshake for ID5c7a9f18b0a8b
+
+[16:27:13] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:27:21] Server Started on 0.0.0.0:500
+
+[16:27:23] Client Connected to Master Socket Resource id #9
+
+[16:27:23] User ID5c7a9f18b0a8b Connected on Resource id #12
+
+[16:27:23] Generating Handshake for ID5c7a9f18b0a8b
+
+[16:27:23] Error Establishing Handshake for ID5c7a9f18b0a8b
+
+[16:27:23] User ID5c7a9f18b0a8b Joined Room ID5c7a9f185b545
+
+[16:32:57] Server Started on 0.0.0.0:500
+
+[16:33:00] Client Connected to Master Socket Resource id #9
+
+[16:33:00] Generating Handshake for
+
+[16:33:00] Error Establishing Handshake for
+
+[16:33:00] User  Joined Room
+
+[16:33:55] Server Started on 0.0.0.0:500
+
+[16:33:58] Client Connected to Master Socket Resource id #9
+
+[16:33:58] Generating Handshake for
+
+[16:33:58] Error Establishing Handshake for
+
+[16:33:58] User  Joined Room
+
+[16:34:42] Server Started on 0.0.0.0:500
+
+[16:34:45] Client Connected to Master Socket Resource id #9
+
+[16:34:45] Socket Resource id #12 Disconnected
+
+[16:34:45] User  Left Room
+
+[16:34:45] User  Disconnected from Resource id #12
+
+[16:37:23] Server Started on 0.0.0.0:500
+
+[16:37:26] Client Connected to Master Socket Resource id #9
+
+[16:37:26] Socket Resource id #12 Disconnected
+
+[16:37:26] User  Left Room
+
+[16:37:26] User Disconnected from Resource id #12
+
+[16:37:57] Server Started on 0.0.0.0:500
+
+[16:37:59] Client Connected to Master Socket Resource id #9
+
+[16:37:59] Socket Resource id #12 Disconnected
+
+[16:37:59] User Disconnected from Resource id #12
+
+[16:43:12] Server Started on 0.0.0.0:500
+
+[16:43:14] Client Connected to Master Socket Resource id #9
+
+[16:43:14] Socket Resource id #12 Disconnected
+
+[16:43:14] User Disconnected from Resource id #12
+
+[16:43:50] Client Connected to Master Socket Resource id #9
+
+[16:43:50] User ID5c7a9f2448cbc Connected on Resource id #18
+
+[16:43:50] Generating Handshake for ID5c7a9f2448cbc
+
+[16:43:51] User ID5c7a9f2448cbc Established a Handshake Successfully
+
+[16:43:51] User ID5c7a9f2448cbc Joined Room ID5c7a9f185b545
+
+[16:44:00] Message Recived From Socket Resource id #18
+
+[16:44:06] Socket Resource id #18 Disconnected
+
+[16:44:06] User ID5c7a9f2448cbc Left Room ID5c7a9f185b545
+
+[16:44:06] User Disconnected from Resource id #18
+
+[16:44:18] Server Started on 0.0.0.0:500
+
+[16:44:29] Client Connected to Master Socket Resource id #9
+
+[16:44:29] User ID5c7a9f2448cbc Connected on Resource id #12
+
+[16:44:29] Generating Handshake for ID5c7a9f2448cbc
+
+[16:44:29] User ID5c7a9f2448cbc Established a Handshake Successfully
+
+[16:44:29] User ID5c7a9f2448cbc Joined Room ID5c7aa4da68f15
+
+[16:44:40] Server Started on 0.0.0.0:500
+
+[16:44:51] Client Connected to Master Socket Resource id #9
+
+[16:44:51] User ID5c7a9f2448cbc Connected on Resource id #12
+
+[16:44:51] Generating Handshake for ID5c7a9f2448cbc
+
+[16:44:51] User ID5c7a9f2448cbc Established a Handshake Successfully
+
+[16:44:51] User ID5c7a9f2448cbc Joined Room ID5c7aa4f1244ff
+
+[16:44:57] Message Recived From Socket Resource id #12
+
+[16:45:15] Socket Resource id #12 Disconnected
+
+[16:45:15] User ID5c7a9f2448cbc Left Room ID5c7aa4f1244ff
+
+[16:45:15] User Disconnected from Resource id #12
+
+[16:45:18] Client Connected to Master Socket Resource id #9
+
+[16:45:18] Socket Resource id #30 Disconnected
+
+[16:45:18] User Disconnected from Resource id #30
+
+[17:00:12] Client Connected to Master Socket Resource id #9
+
+[17:00:12] User ID5c7a9f18b0a8b Connected on Resource id #36
+
+[17:00:12] Generating Handshake for ID5c7a9f18b0a8b
+
+[17:00:12] User ID5c7a9f18b0a8b Established a Handshake Successfully
+
+[17:00:12] User ID5c7a9f18b0a8b Joined Room ID5c7aa88ae8b69
+
+[17:04:19] Socket Resource id #36 Disconnected
+
+[17:04:19] User ID5c7a9f18b0a8b Left Room ID5c7aa88ae8b69
+
+[17:04:19] User Disconnected from Resource id #36
+
+[17:12:43] Client Connected to Master Socket Resource id #9
+
+[17:12:43] User ID5c7a9f18b0a8b Connected on Resource id #51
+
+[17:12:43] Generating Handshake for ID5c7a9f18b0a8b
+
+[17:12:43] User ID5c7a9f18b0a8b Established a Handshake Successfully
+
+[17:12:43] User ID5c7a9f18b0a8b Joined Room ID5c7aab794c3ae
+

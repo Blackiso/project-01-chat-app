@@ -192,11 +192,12 @@
         }
         // Delete inactive users
         protected function clear_inactive_users() {
-        	$qr = $this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 5 MINUTE)");
+        	$this->db->query("DELETE FROM users WHERE last_seen < (NOW() - INTERVAL 5 MINUTE)");
         }
         // Delete inactive rooms
         protected function clear_inactive_rooms() {
-        	$qr = $this->db->query("DELETE rooms FROM rooms WHERE room_ID NOT IN (SELECT DISTINCT room_ID FROM users)");
+        	$this->db->query("DELETE rooms FROM rooms WHERE room_ID NOT IN (SELECT DISTINCT room_ID FROM users)");
+        	$this->db->query("DELETE users_options FROM users_options WHERE room_ID NOT IN (SELECT DISTINCT room_ID FROM rooms)");
         }
     	// Method to extract request body
 		protected function get_request_body() {

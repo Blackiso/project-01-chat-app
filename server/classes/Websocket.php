@@ -52,24 +52,35 @@
 						if (!$num_bytes) {
 							$error_txt = socket_strerror(socket_last_error());
 							$this->log($error_txt);
-							$this->disconnect($socket);
+							$this->disconnect($socket, $buffer);
 						}else if($num_bytes == 0) {
-							$this->disconnect($socket);
+							$this->disconnect($socket, $buffer);
 						}else {
 							// Check handshake
 							if ($this->check_handshake($socket)) {
-								$handler = new Handler($this->users, $socket, $buffer);
-								// $handler->init();
+								$header = $this->parse_headers($buffer);
+								if ($header['opcode'] !== 8) {
+									$this->log("Message Recived From Socket $socket");
+									$handler = new Handler($this->users, $socket, $buffer);
+									$handler->init();
+								}else {
+									$this->log("Socket $socket Disconnected");
+									$this->disconnect($socket, $buffer);
+								}
 							}else {
 								$tmp = str_replace("\r", '', $buffer);
 								if (strpos($tmp, "\n\n") === false ) {
 									continue;
 								}
 								//Create a hanshake ...
-								if($user = $this->connect($socket, $buffer)) {
+								$user = $this->connect($socket, $buffer);
+								if(!$user) {
+									$this->log("Socket $socket Disconnected");
+									$this->disconnect($socket, $buffer, false);
+								}else {
 									$this->handshake($user, $buffer);
 									$handler = new Handler($this->users, $socket, $buffer);
-									// $handler->user_joined();
+									$handler->user_joined();
 								}
 							}
 						}
@@ -86,20 +97,31 @@
 				}
 			}
 			if(preg_match("/Sec-WebSocket-Protocol: (.*)\r\n/", $buffer, $match)){
-	            $user_ID = $match[1];
+				$info = explode(", ", $match[1]);
+	            $user_ID = $info[0];
+	            $room_ID = $info[1];
 	        }
-			$user = new User($socket, $user_ID);
-			$this->users[$user_ID] = $user;
-			$this->sockets[$user_ID] = $socket;
-			$this->log("User $user_ID Connected on $socket");
-			return $user;
+			$user = new User($socket, $user_ID, $room_ID);
+			if ($user->error !== null) {
+				return false;
+			}else {
+				$this->users[$user_ID] = $user;
+				$this->sockets[$user_ID] = $socket;
+				$this->log("User $user_ID Connected on $socket");
+				return $user;
+			}
 		}
 
-		protected function disconnect($socket) {
-			$user = $this->get_user_by_socket($socket);
-			unset($this->users[$user->user_ID]);
-			unset($this->sockets[$user->user_ID]);
-			$this->log("User $user->user_ID Disconnected from $socket");
+		protected function disconnect($socket, $buffer, $joined = true) {
+			if ($joined) {
+				$handler = new Handler($this->users, $socket, $buffer);
+				$handler->user_left();
+				$user = $this->get_user_by_socket($socket);
+				unset($this->users[$user->user_ID]);
+				unset($this->sockets[$user->user_ID]);
+			}
+			
+			$this->log("User Disconnected from $socket");
 		}
 
 		protected function check_handshake($socket) {
@@ -133,7 +155,8 @@
 	            $key = $match[1];
 	        }
 	        if(preg_match("/Sec-WebSocket-Protocol: (.*)\r\n/", $buffer, $match)){
-	            $protocol = $match[1];
+	        	$protocol = explode(", ", $match[1]);
+	            $protocol = $protocol[0];
 	        }
 	        $this->log("Generating Handshake for $user->user_ID");
 	        $acceptKey = $key.'258EAFA5-E914-47DA-95CA-C5AB0DC85B11';
@@ -150,6 +173,8 @@
             	$this->log("User $user->user_ID Established a Handshake Successfully");
             	$this->users[$user->user_ID]->handshake = true;
             	return true;
+            }else {
+            	$this->log("Error Establishing Handshake for $user->user_ID");
             }
 		}
 

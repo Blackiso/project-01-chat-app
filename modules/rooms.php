@@ -37,8 +37,8 @@
             if ($request_data->room_name == "" || $request_data->username == "") {
                 $this->write_error("Request Error!");
             }
-            $this->room_name = htmlentities($request_data->room_name);
-            $this->username = htmlentities($request_data->username);
+            $this->room_name = addslashes(htmlentities($request_data->room_name));
+            $this->username = addslashes(htmlentities($request_data->username));
             $this->options = $request_data->options;
 
             if (!$this->db->check_row("rooms", array("room_name" => $this->room_name))) {
@@ -130,24 +130,3 @@
 
         }
     }
-
-
-    /*
-    Create room request body
-    ------------------------
-    {
-        "room_name" : "black room",
-        "username"  : "backiso",
-        "options"   : {
-            "access" : "private",
-            "tags"    : "action, shit" || null
-        }
-    }
-
-    Creating a room request returns 
-    -------------------------------
-    {
-        "room_ID": "ID5c64294b6cbfd",
-        "room_name": "black room"
-    }
-    */

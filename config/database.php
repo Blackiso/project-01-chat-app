@@ -44,7 +44,7 @@
 	 					$this->connect(1);
 	 					// create tables
 	 					$msg_table_qr = $this->conn->prepare("CREATE TABLE `messages` (
-						  `id` int(255) NOT NULL,
+						  `id` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `user_ID` varchar(255) NOT NULL,
 						  `username` varchar(255) NOT NULL,
@@ -83,7 +83,6 @@
 						  `user_ID` varchar(255) NOT NULL,
 						  `room_ID` varchar(255) NOT NULL,
 						  `banned` tinyint(1) NOT NULL DEFAULT '0',
-						  `moderator` tinyint(1) NOT NULL DEFAULT '0',
 						  `admin` tinyint(1) NOT NULL DEFAULT '0'
 						) ENGINE=InnoDB DEFAULT CHARSET=latin1");
 
@@ -114,8 +113,6 @@
 						$pk_change_users_options->execute();
 
 						// Setup AI
-						$ai_change_msg = $this->conn->prepare("ALTER TABLE `messages`
-						  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT");
 						$ai_change_rooms_options = $this->conn->prepare("ALTER TABLE `rooms_options`
 						  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT");
 						$ai_change_users = $this->conn->prepare("ALTER TABLE `users`
@@ -124,7 +121,6 @@
 						  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT");
 
 						// Execute querys
-						$ai_change_msg->execute();
 						$ai_change_rooms_options->execute();
 						$ai_change_users->execute();
 						$ai_change_users_options->execute();
@@ -200,9 +196,6 @@
 			}else if (preg_match('/^(INSERT)/', $statment)) {
 				$result = (object)array();
 				$result->query = $rs;
-				if ($id = $this->conn->lastInsertId()) {
-					$result->id = $id;
-				}
 				return $result;
 			}else {
 				return $rs;
