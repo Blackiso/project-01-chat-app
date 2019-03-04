@@ -41,13 +41,13 @@
         * @return Array 
         */
         protected function post() {
+            // Check if room exist
+            $this->room_exist(true);
+            $this->is_banned();
             // Get data form request body
             $request_data = $this->get_request_body();
             $this->username = isset($request_data->username) ? addslashes(htmlentities($request_data->username)) : null;
             $this->room_ID = $request_data->room_ID;
-            // Check if room exist
-            $this->room_exist(true);
-            $this->is_banned();
             // Join room
             return $this->join_room();
 
@@ -67,7 +67,8 @@
             }
             
             if ($user_query) {
-                if ($this->is_admin($this->room_ID)) {
+                $admin = $this->db->check_row("rooms", array("room_ID" => $room_ID, "session_ID" => SESSID));
+                if ($admin) {
                     $this->set_option("admin", 1);
                 }
                 // Get room name
@@ -112,7 +113,9 @@
                 }
             }
         }
-
+        /**
+        * Check if user is banned form room
+        */
         private function is_banned() {
             $user = $this->db->query("SELECT user_ID, banned FROM users_options WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'");
             if (!empty($user)) {
@@ -126,4 +129,3 @@
 
 
 
-      

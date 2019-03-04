@@ -10,6 +10,7 @@
     class rooms extends Module {
         // Setting parameters
         protected $room_ID;
+        protected $user_ID;
         protected $session_ID = SESSID;
         protected $room_name;
         protected $username;
@@ -23,6 +24,10 @@
         	$this->room_ID = $room_ID !== null ? $room_ID : "ID".uniqid();
             $this->sub_collection = $sub_collection;
             $this->params = (Object)$params;
+
+            if (isset($_SESSION['user_ID'])) {
+                $this->user_ID = $_SESSION['user_ID'];
+            }
 
         	// Run parent constructor
         	parent::__construct($method);
@@ -75,8 +80,11 @@
             if ($this->room_exist(true)) {
                 // Check if admin 
                 if (!$server) {
-                    if (!$this->is_admin($this->room_ID)) {
-                        $this->write_error("Error only the admin can delete this room!");
+                    if ($this->user_ID == null) {
+                        $this->write_error("Error Only The Admin Can Delete This Room!");
+                    }
+                    if (!$this->is_admin($this->room_ID, $this->user_ID)) {
+                        $this->write_error("Error Only The Admin Can Delete This Room!");
                     }
                 }
                 // Delete all users from room
@@ -91,7 +99,7 @@
                 if ($clear_users && $clear_users_op && $clear_options && $delete_room) {
                     return array("success" => true);
                 }else {
-                    $this->write_error("Error deleting room!");
+                    $this->write_error("Error Deleting Room!");
                 }
             }
         }

@@ -24,6 +24,7 @@
 			$this->user_ID = isset($_SESSION['user_ID']) ? $_SESSION['user_ID'] : $this->write_error("Request Error!");
 			$this->sub_collection = $sub_collection;
 			$this->params = (object)$params;
+
 			// Run parent constructor
 			parent::__construct($method);
 		}
@@ -60,7 +61,7 @@
 			$this->im_here();
 			// Get request body
 			$request_data = $this->get_request_body();
-			$this->message = htmlentities($request_data->message);
+			$this->message = addslashes(htmlentities($request_data->message));
 			$id = uniqid();
 			// Insert username in database
 			$message_insert = $this->db->query("INSERT INTO messages 
@@ -82,7 +83,7 @@
 		protected function run_check() {
 			// Check if user is in the room
 			if (!$this->db->check_row("users", array("user_ID" => $this->user_ID, "room_ID" => $this->room_ID))) {
-				$this->write_error("Request Error!");
+				$this->write_error("You Need To Join The Room To Send Messages!");
 			}else {
 				$username = $this->db->query("SELECT username FROM users WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'");
 				$this->username = $username[0]['username'];

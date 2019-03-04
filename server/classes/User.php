@@ -25,6 +25,7 @@
 	 	private function create_user() {
 	 		$result = $this->db->query("SELECT user_ID, room_ID, username, session_ID FROM users WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'");
 	 		if (empty($result)) {
+	 			$this->close();
 	 			$this->error = true;
 	 		}else {
 	 			$this->username = $result[0]['username'];
@@ -37,7 +38,7 @@
 			$msg = (object) [];
 			$msg->type = $type;
 			$msg->body = $body;
-			$msg = json_encode($this->utf8ize($msg));
+			$msg = json_encode($msg);
 			$response = $this->mask($msg);
 			$write = socket_write($this->socket, $response);
 			$error_txt = socket_strerror(socket_last_error());
@@ -52,6 +53,15 @@
 			$txt = "[".date("H:i:s")."] ".trim($msg)."\n";
 			$myfile = file_put_contents('log.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
 			echo $txt;
+		}
+
+		public function is_admin() {
+			$admin = $this->db->query("SELECT * FROM  users_options WHERE user_ID = '$this->user_ID' AND room_ID = '$this->room_ID'");
+			if (!empty($admin) AND $admin[0]['admin']) {
+				return true;
+			}else {
+				return false;
+			}
 		}
 
 		private function utf8ize($d) {

@@ -54,6 +54,7 @@
 			$body = (object) [];
 			$body->username = $user->username;
 			$body->user_ID = $user->user_ID;
+			$body->admin = $user->is_admin();
 			$this->send_to_all("user_joined", $body);
 		}
 
@@ -65,6 +66,7 @@
 			$body = (object) [];
 			$body->username = $user->username;
 			$body->user_ID = $user->user_ID;
+			$body->admin = $user->is_admin();
 			$this->send_to_all("user_left", $body);
 		}
 

@@ -26,6 +26,10 @@
 		}
 	}
 
+	function boole_me($string) {
+		return filter_var($string, FILTER_VALIDATE_BOOLEAN);
+	}
+
 	/**
 	* Clear all empty items in array
 	* @param array : Array
@@ -145,9 +149,9 @@
 			}
 		}
 		// Check if current users is the admin
-		protected function is_admin($room_ID) {
-			$admin = $this->db->check_row("rooms", array("room_ID" => $room_ID, "session_ID" => SESSID));
-			if ($admin) {
+		protected function is_admin($room_ID, $user_ID) {
+			$admin = $this->db->query("SELECT * FROM  users_options WHERE user_ID = '$user_ID' AND room_ID = '$room_ID'");
+			if (!empty($admin) AND $admin[0]['admin']) {
 				return true;
 			}else {
 				return false;
@@ -177,6 +181,13 @@
             if ($this->room_exist()) {
                 $users = $this->db->query("SELECT user_ID, room_ID, username, last_seen 
                     FROM users WHERE room_ID = '$this->room_ID'");
+                foreach ($users as $i => $user) {
+                	if ($this->is_admin($this->room_ID, $user['user_ID'])) {
+                		$users[$i]['admin'] = true;
+                	}else {
+                		$users[$i]['admin'] = false;
+                	}
+                }
                 return $users;
             }else {
                 $this->write_error("Room dosent exist!");
