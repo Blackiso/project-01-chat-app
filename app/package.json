@@ -1,0 +1,38 @@
+{
+  "name": "chatapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "history": "^4.7.2",
+    "html-entities": "^1.2.1",
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
+    "react": "^16.8.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.8.1",
+    "react-linkify": "^0.2.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0"
+  }
+}

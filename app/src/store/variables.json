@@ -1,0 +1,16 @@
+{
+    "host" : "http://localhost/chat_app",
+    "ws": "ws://127.0.0.1:9000",
+    "paths" : {
+        "users_path": "/users",
+        "rooms_path": "/rooms",
+        "messages_path": "/messages/"
+    },
+    "layout": {
+        "active_users_title" : "Connected Users",
+        "type_message" : "Type Message Here...",
+        "app_name" : "Chatapp",
+        "create_room" : "Create new room",
+        "join_room" : "Join a room"
+    }
+}

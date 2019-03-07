@@ -430,3 +430,499 @@
 
 [22:44:40] User Disconnected from Resource id #50
 
+[17:35:49] Server Started on 127.0.01:9000
+
+[17:47:05] Client Connected to Master Socket Resource id #9
+
+[17:47:05] User ID5c6f223f1a3b0 Connected on Resource id #12
+
+[17:47:05] Generating Handshake for ID5c6f223f1a3b0
+
+[17:47:06] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[17:47:06] User ID5c6f223f1a3b0 Joined Room ID5c7ea8060c9f9
+
+[17:48:16] Client Connected to Master Socket Resource id #9
+
+[17:48:16] User ID5c7ea84f0c2d9 Connected on Resource id #22
+
+[17:48:16] Generating Handshake for ID5c7ea84f0c2d9
+
+[17:48:16] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[17:48:16] User ID5c7ea84f0c2d9 Joined Room ID5c7ea8060c9f9
+
+[17:48:16] The operation completed successfully.
+
+[17:48:23] Message Recived From Socket Resource id #22
+
+[17:48:23] The operation completed successfully.
+
+[17:49:12] Socket Resource id #22 Disconnected
+
+[17:49:13] User ID5c7ea84f0c2d9 Left Room ID5c7ea8060c9f9
+
+[17:49:13] The operation completed successfully.
+
+[17:49:13] User Disconnected from Resource id #22
+
+[17:49:21] Socket Resource id #12 Disconnected
+
+[17:49:23] User ID5c6f223f1a3b0 Left Room ID5c7ea8060c9f9
+
+[17:49:24] User Disconnected from Resource id #12
+
+[17:49:47] Client Connected to Master Socket Resource id #9
+
+[17:49:47] User ID5c6f223f1a3b0 Connected on Resource id #48
+
+[17:49:47] Generating Handshake for ID5c6f223f1a3b0
+
+[17:49:47] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[17:49:48] User ID5c6f223f1a3b0 Joined Room ID5c7ea8060c9f9
+
+[17:50:15] Client Connected to Master Socket Resource id #9
+
+[17:50:15] User ID5c7ea84f0c2d9 Connected on Resource id #58
+
+[17:50:15] Generating Handshake for ID5c7ea84f0c2d9
+
+[17:50:15] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[17:50:15] User ID5c7ea84f0c2d9 Joined Room ID5c7ea8060c9f9
+
+[17:50:15] The operation completed successfully.
+
+[17:50:20] Message Recived From Socket Resource id #58
+
+[17:50:20] The operation completed successfully.
+
+[17:50:49] Socket Resource id #48 Disconnected
+
+[17:50:50] User ID5c6f223f1a3b0 Left Room ID5c7ea8060c9f9
+
+[17:50:50] The operation completed successfully.
+
+[17:50:50] User Disconnected from Resource id #48
+
+[17:50:58] Client Connected to Master Socket Resource id #9
+
+[17:50:59] User ID5c6f223f1a3b0 Connected on Resource id #79
+
+[17:50:59] Generating Handshake for ID5c6f223f1a3b0
+
+[17:50:59] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[17:50:59] User ID5c6f223f1a3b0 Joined Room ID5c7ea8060c9f9
+
+[17:50:59] The operation completed successfully.
+
+[17:51:07] Message Recived From Socket Resource id #58
+
+[17:51:07] The operation completed successfully.
+
+[17:51:28] Socket Resource id #58 Disconnected
+
+[17:51:29] User ID5c7ea84f0c2d9 Left Room ID5c7ea8060c9f9
+
+[17:51:29] The operation completed successfully.
+
+[17:51:29] User Disconnected from Resource id #58
+
+[17:51:30] Socket Resource id #79 Disconnected
+
+[17:51:30] User ID5c6f223f1a3b0 Left Room ID5c7ea8060c9f9
+
+[17:51:32] User Disconnected from Resource id #79
+
+[17:51:40] Client Connected to Master Socket Resource id #9
+
+[17:51:41] User ID5c6f223f1a3b0 Connected on Resource id #105
+
+[17:51:41] Generating Handshake for ID5c6f223f1a3b0
+
+[17:51:41] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[17:51:41] User ID5c6f223f1a3b0 Joined Room ID5c7ea8060c9f9
+
+[17:51:46] Client Connected to Master Socket Resource id #9
+
+[17:51:46] User ID5c7ea84f0c2d9 Connected on Resource id #115
+
+[17:51:46] Generating Handshake for ID5c7ea84f0c2d9
+
+[17:51:46] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[17:51:46] User ID5c7ea84f0c2d9 Joined Room ID5c7ea8060c9f9
+
+[17:51:46] The operation completed successfully.
+
+[17:51:51] Message Recived From Socket Resource id #115
+
+[17:51:51] The operation completed successfully.
+
+[17:56:35] Socket Resource id #115 Disconnected
+
+[17:56:36] User ID5c7ea84f0c2d9 Left Room ID5c7ea8060c9f9
+
+[17:56:36] The operation completed successfully.
+
+[17:56:36] User Disconnected from Resource id #115
+
+[17:56:37] An established connection was aborted by the software in your host machine.
+
+[17:56:37] User ID5c6f223f1a3b0 Left Room ID5c7ea8060c9f9
+
+[17:56:37] User Disconnected from Resource id #105
+
+[17:58:07] Client Connected to Master Socket Resource id #9
+
+[17:58:07] User ID5c6f223f1a3b0 Connected on Resource id #141
+
+[17:58:07] Generating Handshake for ID5c6f223f1a3b0
+
+[17:58:07] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[17:58:07] User ID5c6f223f1a3b0 Joined Room ID5c7ea8060c9f9
+
+[17:58:11] Client Connected to Master Socket Resource id #9
+
+[17:58:11] User ID5c7ea84f0c2d9 Connected on Resource id #151
+
+[17:58:11] Generating Handshake for ID5c7ea84f0c2d9
+
+[17:58:11] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[17:58:11] User ID5c7ea84f0c2d9 Joined Room ID5c7ea8060c9f9
+
+[17:58:11] An established connection was aborted by the software in your host machine.
+
+[17:58:19] Message Recived From Socket Resource id #151
+
+[17:58:19] An established connection was aborted by the software in your host machine.
+
+[18:00:30] Socket Resource id #151 Disconnected
+
+[18:00:31] User ID5c7ea84f0c2d9 Left Room ID5c7ea8060c9f9
+
+[18:00:31] An established connection was aborted by the software in your host machine.
+
+[18:00:31] User Disconnected from Resource id #151
+
+[18:00:31] Socket Resource id #141 Disconnected
+
+[18:00:31] User ID5c6f223f1a3b0 Left Room ID5c7ea8060c9f9
+
+[18:00:31] User Disconnected from Resource id #141
+
+[18:03:54] Client Connected to Master Socket Resource id #9
+
+[18:03:54] User ID5c6f223f1a3b0 Connected on Resource id #177
+
+[18:03:54] Generating Handshake for ID5c6f223f1a3b0
+
+[18:03:54] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[18:03:54] User ID5c6f223f1a3b0 Joined Room ID5c7ea8060c9f9
+
+[18:04:07] Client Connected to Master Socket Resource id #9
+
+[18:04:07] User ID5c7ea84f0c2d9 Connected on Resource id #187
+
+[18:04:07] Generating Handshake for ID5c7ea84f0c2d9
+
+[18:04:07] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[18:04:07] User ID5c7ea84f0c2d9 Joined Room ID5c7ea8060c9f9
+
+[18:04:07] An established connection was aborted by the software in your host machine.
+
+[18:04:14] Message Recived From Socket Resource id #187
+
+[18:04:14] An established connection was aborted by the software in your host machine.
+
+[18:04:48] Socket Resource id #187 Disconnected
+
+[18:04:48] User ID5c7ea84f0c2d9 Left Room ID5c7ea8060c9f9
+
+[18:04:48] An established connection was aborted by the software in your host machine.
+
+[18:04:48] User Disconnected from Resource id #187
+
+[18:04:49] Socket Resource id #177 Disconnected
+
+[18:04:50] User ID5c6f223f1a3b0 Left Room ID5c7ea8060c9f9
+
+[18:04:50] User Disconnected from Resource id #177
+
+[18:04:56] Client Connected to Master Socket Resource id #9
+
+[18:04:56] User ID5c7ea84f0c2d9 Connected on Resource id #213
+
+[18:04:56] Generating Handshake for ID5c7ea84f0c2d9
+
+[18:04:56] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[18:04:56] User ID5c7ea84f0c2d9 Joined Room ID5c7ea8060c9f9
+
+[18:05:00] Client Connected to Master Socket Resource id #9
+
+[18:05:00] User ID5c6f223f1a3b0 Connected on Resource id #223
+
+[18:05:00] Generating Handshake for ID5c6f223f1a3b0
+
+[18:05:00] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[18:05:00] User ID5c6f223f1a3b0 Joined Room ID5c7ea8060c9f9
+
+[18:05:00] An established connection was aborted by the software in your host machine.
+
+[18:05:07] Message Recived From Socket Resource id #213
+
+[18:05:07] An established connection was aborted by the software in your host machine.
+
+[18:05:12] Message Recived From Socket Resource id #223
+
+[18:05:13] An established connection was aborted by the software in your host machine.
+
+[18:05:41] Socket Resource id #213 Disconnected
+
+[18:05:42] User ID5c7ea84f0c2d9 Left Room ID5c7ea8060c9f9
+
+[18:05:42] An established connection was aborted by the software in your host machine.
+
+[18:05:42] User Disconnected from Resource id #213
+
+[18:05:46] Client Connected to Master Socket Resource id #9
+
+[18:05:46] User ID5c7ea84f0c2d9 Connected on Resource id #248
+
+[18:05:46] Generating Handshake for ID5c7ea84f0c2d9
+
+[18:05:46] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[18:05:46] User ID5c7ea84f0c2d9 Joined Room ID5c7ea8060c9f9
+
+[18:05:46] An established connection was aborted by the software in your host machine.
+
+[18:05:50] Message Recived From Socket Resource id #223
+
+[18:05:50] An established connection was aborted by the software in your host machine.
+
+[18:05:56] Message Recived From Socket Resource id #248
+
+[18:05:56] An established connection was aborted by the software in your host machine.
+
+[18:06:01] Message Recived From Socket Resource id #223
+
+[18:06:01] An established connection was aborted by the software in your host machine.
+
+[18:06:13] Message Recived From Socket Resource id #248
+
+[18:06:13] An established connection was aborted by the software in your host machine.
+
+[18:06:16] Socket Resource id #223 Disconnected
+
+[18:06:16] User ID5c6f223f1a3b0 Left Room ID5c7ea8060c9f9
+
+[18:06:16] An established connection was aborted by the software in your host machine.
+
+[18:06:16] User Disconnected from Resource id #223
+
+[18:06:27] Client Connected to Master Socket Resource id #9
+
+[18:06:27] User ID5c6f223f1a3b0 Connected on Resource id #281
+
+[18:06:27] Generating Handshake for ID5c6f223f1a3b0
+
+[18:06:27] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[18:06:27] User ID5c6f223f1a3b0 Joined Room ID5c7eac925bded
+
+[18:06:32] Socket Resource id #248 Disconnected
+
+[18:06:32] User ID5c7ea84f0c2d9 Left Room ID5c7ea8060c9f9
+
+[18:06:33] User Disconnected from Resource id #248
+
+[18:06:37] Client Connected to Master Socket Resource id #9
+
+[18:06:37] User ID5c7ea84f0c2d9 Connected on Resource id #296
+
+[18:06:37] Generating Handshake for ID5c7ea84f0c2d9
+
+[18:06:37] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[18:06:37] User ID5c7ea84f0c2d9 Joined Room ID5c7eac925bded
+
+[18:06:37] An established connection was aborted by the software in your host machine.
+
+[18:06:44] Message Recived From Socket Resource id #296
+
+[18:06:44] An established connection was aborted by the software in your host machine.
+
+[18:06:51] Message Recived From Socket Resource id #281
+
+[18:06:51] An established connection was aborted by the software in your host machine.
+
+[18:06:56] Message Recived From Socket Resource id #296
+
+[18:06:56] An established connection was aborted by the software in your host machine.
+
+[18:07:05] Message Recived From Socket Resource id #281
+
+[18:07:05] An established connection was aborted by the software in your host machine.
+
+[18:07:06] Message Recived From Socket Resource id #281
+
+[18:07:06] An established connection was aborted by the software in your host machine.
+
+[18:07:07] Message Recived From Socket Resource id #281
+
+[18:07:07] An established connection was aborted by the software in your host machine.
+
+[18:08:27] Socket Resource id #296 Disconnected
+
+[18:08:27] User ID5c7ea84f0c2d9 Left Room ID5c7eac925bded
+
+[18:08:27] An established connection was aborted by the software in your host machine.
+
+[18:08:28] User Disconnected from Resource id #296
+
+[18:08:28] Socket Resource id #281 Disconnected
+
+[18:08:28] User ID5c6f223f1a3b0 Left Room ID5c7eac925bded
+
+[18:08:29] User Disconnected from Resource id #281
+
+[18:08:38] Client Connected to Master Socket Resource id #9
+
+[18:08:38] User ID5c6f223f1a3b0 Connected on Resource id #342
+
+[18:08:38] Generating Handshake for ID5c6f223f1a3b0
+
+[18:08:38] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[18:08:38] User ID5c6f223f1a3b0 Joined Room ID5c7eac925bded
+
+[18:08:42] Message Recived From Socket Resource id #342
+
+[18:08:49] Client Connected to Master Socket Resource id #9
+
+[18:08:49] User ID5c7ea84f0c2d9 Connected on Resource id #355
+
+[18:08:49] Generating Handshake for ID5c7ea84f0c2d9
+
+[18:08:49] User ID5c7ea84f0c2d9 Established a Handshake Successfully
+
+[18:08:49] User ID5c7ea84f0c2d9 Joined Room ID5c7eac925bded
+
+[18:08:49] An established connection was aborted by the software in your host machine.
+
+[18:08:52] Message Recived From Socket Resource id #355
+
+[18:08:52] An established connection was aborted by the software in your host machine.
+
+[18:08:53] Message Recived From Socket Resource id #355
+
+[18:08:53] An established connection was aborted by the software in your host machine.
+
+[18:08:54] Message Recived From Socket Resource id #355
+
+[18:08:54] An established connection was aborted by the software in your host machine.
+
+[18:08:54] Message Recived From Socket Resource id #355
+
+[18:08:54] An established connection was aborted by the software in your host machine.
+
+[18:08:54] Message Recived From Socket Resource id #355
+
+[18:08:54] An established connection was aborted by the software in your host machine.
+
+[18:08:55] Message Recived From Socket Resource id #355
+
+[18:08:55] An established connection was aborted by the software in your host machine.
+
+[18:08:55] Message Recived From Socket Resource id #355
+
+[18:08:55] An established connection was aborted by the software in your host machine.
+
+[18:08:55] Message Recived From Socket Resource id #355
+
+[18:08:55] An established connection was aborted by the software in your host machine.
+
+[18:08:56] Message Recived From Socket Resource id #355
+
+[18:08:56] An established connection was aborted by the software in your host machine.
+
+[18:08:56] Message Recived From Socket Resource id #355
+
+[18:08:56] An established connection was aborted by the software in your host machine.
+
+[18:08:56] Message Recived From Socket Resource id #355
+
+[18:08:56] An established connection was aborted by the software in your host machine.
+
+[18:08:57] Message Recived From Socket Resource id #355
+
+[18:08:57] An established connection was aborted by the software in your host machine.
+
+[18:09:31] Message Recived From Socket Resource id #342
+
+[18:09:31] An established connection was aborted by the software in your host machine.
+
+[18:10:58] Socket Resource id #355 Disconnected
+
+[18:10:58] User ID5c7ea84f0c2d9 Left Room ID5c7eac925bded
+
+[18:10:58] An established connection was aborted by the software in your host machine.
+
+[18:10:58] User Disconnected from Resource id #355
+
+[18:11:31] Socket Resource id #342 Disconnected
+
+[18:11:32] User ID5c6f223f1a3b0 Left Room ID5c7eac925bded
+
+[18:11:33] User Disconnected from Resource id #342
+
+[18:12:50] Client Connected to Master Socket Resource id #9
+
+[18:12:50] User ID5c6f223f1a3b0 Connected on Resource id #429
+
+[18:12:50] Generating Handshake for ID5c6f223f1a3b0
+
+[18:12:50] User ID5c6f223f1a3b0 Established a Handshake Successfully
+
+[18:12:50] User ID5c6f223f1a3b0 Joined Room ID5c7eac925bded
+
+[18:12:54] Message Recived From Socket Resource id #429
+
+[18:12:55] Message Recived From Socket Resource id #429
+
+[18:12:56] Message Recived From Socket Resource id #429
+
+[18:12:57] Message Recived From Socket Resource id #429
+
+[18:12:57] Message Recived From Socket Resource id #429
+
+[18:12:58] Message Recived From Socket Resource id #429
+
+[18:12:59] Message Recived From Socket Resource id #429
+
+[18:13:00] Message Recived From Socket Resource id #429
+
+[18:13:43] Socket Resource id #429 Disconnected
+
+[18:13:43] User ID5c6f223f1a3b0 Left Room ID5c7eac925bded
+
+[18:13:43] User Disconnected from Resource id #429
+
+[18:20:11] Error Listening on http://196.65.33.144:8081
+
+[18:29:30] Error Listening on http://localhost:8081
+
+[18:29:43] Server Started on localhost:8081
+
+[18:32:38] Server Started on 127.0.0.1:8081
+
